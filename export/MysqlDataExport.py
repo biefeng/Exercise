@@ -6,8 +6,10 @@ from xlwt import Workbook, XFStyle, Font, Borders, Pattern, Style, Alignment
 from csv import DictWriter
 
 DEV = {'host': '10.128.62.33', 'user': 'root', 'password': 'root', 'database': 'jy_catering'}
+PROD = {'host': '172.16.1.106', 'user': 'root', 'password': 'JY@myt11', 'database': 'jy_catering'}
+
 BASE_WIN_OUTPUT_PATH = 'd:/'
-profiles = {'dev': DEV}
+profiles = {'dev': DEV, 'prod': PROD}
 
 
 class Export:
@@ -22,7 +24,7 @@ class Export:
             kwargs['endIndex'] = (i + 1) * limit + 1
 
             records = self.get_data(**kwargs)
-            with open(kwargs['table'] + '.csv', 'w', newline='') as csvfile:
+            with open('result.csv', 'w', newline='') as csvfile:
                 dict_writer = None
                 column_names = []
 
@@ -65,12 +67,12 @@ class Export:
         data_style = XFStyle()
         data_style.alignment = center_alignment
         data_style.borders = border
-        work_sheet = work_book.add_sheet("餐饮任务")
+        work_sheet = work_book.add_sheet("Sheet")
         limit = 10000
         count = self.get_data_scale(**kwargs)['count']
         times = (count + limit - 1) // limit
         add_header = False
-        for i in range(times):
+        for i in range(1):
             kwargs["startIndex"] = i * limit + 1
             kwargs['endIndex'] = (i + 1) * limit + 1
 
@@ -94,7 +96,7 @@ class Export:
                 y += 1
                 x = 0
 
-        work_book.save(BASE_WIN_OUTPUT_PATH + kwargs['table'] + ".xls")
+        work_book.save(BASE_WIN_OUTPUT_PATH + "result.xls")
 
     @staticmethod
     def get_cursor(**kwargs):
@@ -106,33 +108,40 @@ class Export:
 
     def get_data(self, **kwargs):
         cursor = self.get_cursor(**kwargs)
-        sql = "select * from " + kwargs['table'] + ' limit ' + str(kwargs['startIndex']) + "," + str(
-            kwargs['endIndex'])
-        print(sql)
+        # sql = "select * from " + kwargs['table'] + ' limit ' + str(kwargs['startIndex']) + "," + str(kwargs['endIndex'])
+        sql = ' select * from (' + kwargs['sql'] + ')tmp limit ' + str(
+            kwargs['startIndex']) + "," + str(kwargs['endIndex'])
         cursor.execute(sql)
         return cursor.fetchall()
 
     def get_data_scale(self, **kwargs):
         cursor = self.get_cursor(**kwargs)
-        sql = "select count(1) count from " + kwargs['table']
+        sql = "select count(1) count from (" + kwargs['sql'] + ") tmp"
         cursor.execute(sql)
         return cursor.fetchone()
 
     def export(self):
         args = sys.argv[1:]
-        opts, args = getopt.getopt(args, "hd:t:p:")
+        opts, args = getopt.getopt(args, "hd:s:p:")
         props = {"profiles": "DEV"}
         for opt, arg in opts:
             if opt == '-h':
-                print("python export_to_excel.py -d <database> -t <table> -p <profile> ")
+                print("python export_to_excel.py -d <database> -s <sql> -p <profile> ")
                 sys.exit(1)
             elif opt == '-d':
-                props['database'] = arg
-            elif opt == '-t':
-                props['table'] = arg
+                profiles[props['profiles']]['database'] = props['database']
+            elif opt == '-s':
+                props['sql'] = arg
             elif opt == '-p':
                 props['profiles'] = arg
-        profiles[props['profiles']]['database'] = props['database']
-        profiles[props['profiles']]['table'] = props['table']
+            elif opt == '-o':
+                props['output_path'] = arg
 
-        self.export_to_csv(**profiles[props['profiles']])
+        profiles[props['profiles']]['sql'] = props['sql']
+
+        self.export_to_excel(**profiles[props['profiles']])
+
+
+if "__main__" == __name__:
+    e = Export()
+    e.export()
