@@ -1,12 +1,17 @@
 from tkinter import *
-from tkinter.ttk import *
+from tkinter.ttk import Treeview,Style
+import requests
 
 
 class My_Tk():
-	def __init__(self, root):
+	def __init__(self, root, user_info=None, cookies=None, headers=None):
 		self.tk = root
+		self.user_info = user_info
+		self.base_cookies = cookies
+		self.base_headers = headers
 		# self.tk.geometry('620x400')
 		self.orm = {}
+		self.val_map = {}
 		self.create_button()
 		self.create_heading()
 		self.create_tv()
@@ -15,17 +20,35 @@ class My_Tk():
 		frame = Frame(self.tk, width=200, height=50)
 		frame.pack(fill=X, side=TOP)
 
-		Button(frame, text='增加数据', command=self.download).pack(side=TOP, anchor='w', padx=26)
+		Button(frame, text='增加数据', command=self.download).pack(side=LEFT, anchor='w', padx=26)
+		Button(frame, text='测试数据', command=self.insert_test_tree_data).pack(side=LEFT, anchor='w')
+		Button(frame, text='清除数据', command=self.clear_tree_data).pack(side=LEFT, anchor='w')
 
 	def get_tv(self):
 		return self.tv
 
 	def download(self):
 		for k, v in self.orm.items():
-			button=self.orm[k][0]
+			button = self.orm[k][0]
 			button_value = button.getvar(button['variable'])
 			if button_value == '1':
 				print(self.tv.item(k, 'values'))
+				if self.user_info == None:
+					pass
+				else:
+
+					params = {
+						'fragmentId': self.val_map[k],
+						'token': self.user_info['token'],
+						'albumId': 0,
+						'programId': 0
+					}
+					# self.base_cookies['SERVERID'] = "1ebdc1cc2a3d66d97da2b6d9c90558b4|1563213194|1563213193"
+					response = requests.post(url="http://api.dushu.io/fragment/content", json=params,
+					                         headers=self.base_headers, cookies=self.base_cookies)
+					mediaUrl = response.json()['mediaUrls'][0]
+					print(mediaUrl)
+					print(self.val_map[k])
 			else:
 				pass
 
@@ -35,8 +58,8 @@ class My_Tk():
 		heading_frame.pack(fill=X)
 
 		# 填充用
-		button_frame = Label(heading_frame, width=0.5)
-		button_frame.pack(side=LEFT, )
+		# button_frame = Label(heading_frame,bg='gray')
+		# button_frame.pack(side=LEFT, expand=False)
 		# 全选按钮
 		self.all_buttonvar = IntVar()
 		self.all_button = Checkbutton(heading_frame, text='', variable=self.all_buttonvar, command=self.select_all)
@@ -50,9 +73,30 @@ class My_Tk():
 
 		# 重建tree的头
 		for i in range(len(self.columns)):
-			Label(heading_frame, text=self.columns_header_name[i], width=int(self.header_label_widths[i] * 0.16),
+			Label(heading_frame,text=self.columns_header_name[i], width=int(self.header_label_widths[i] * 0.16),
 			      anchor='center',
 			      relief=GROOVE).pack(side=LEFT)
+
+	def insert_test_tree_data(self):
+		rows = []
+		for i in range(30):
+			rows.append((i + 1, 'B', 'C', 110))
+		self.insert_tv(rows)
+
+	def clear_tree_data(self):
+		self.init_tree()
+
+	# 初始化表格
+	def init_tree(self):
+		[self.tv.delete(item) for item in self.tv.get_children()]
+		self.tv.update()
+		for child in self.button_frame.winfo_children():  # 第一个构件是label，所以忽略
+			child.destroy()
+
+		self.canvas.itemconfigure(self.tv_frame, height=300)  # 设定窗口tv_frame的高度
+		self.tk.update()
+		self.canvas.config(scrollregion=self.canvas.bbox("all"))  # 滚动指定的范围
+		self.canvas.config(height=300)
 
 	def create_tv(self):
 		# 放置 canvas、滚动条的frame
@@ -121,12 +165,15 @@ class My_Tk():
 		self.orm = {}
 		index = 0
 		for row in rows:
-			tv_item = self.tv.insert('', index, value=row, tags=('oddrow'))  # item默认状态tags
+			tv_item = self.tv.insert('', index, value=row[0:3], tags=('oddrow'))  # item默认状态tags
+
 			import tkinter
 			ck_button = tkinter.Checkbutton(self.button_frame, variable=IntVar())
 			ck_button['command'] = lambda item=tv_item: self.select_button(item)
 			ck_button.pack()
+			# ck_button['fragementId']=row[3]
 			self.orm[tv_item] = [ck_button]
+			self.val_map[tv_item] = row[3]
 			index = index + 1
 
 		# 每次点击插入tree，先设定全选按钮不打勾，接着打勾并且调用其函数

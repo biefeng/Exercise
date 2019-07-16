@@ -47,6 +47,7 @@ class application:
 		self.api_uri = r"http://api.dushu.io"
 		self.gateway_url = r"http://gateway-api.dushu.io"
 		self.user = {}
+		self.req_prop = {}
 		root.bind("<Button-3>", self.showMenu)
 		self.window(root)
 
@@ -147,6 +148,7 @@ class application:
 		user_info_avatar = self.avatar = Label(user_info_avatar_frame,
 		                                       image=avatar,
 		                                       anchor='center', height=50)
+		user_info_avatar.image = avatar
 		user_info_avatar.pack(side=LEFT, expand=True, fill=BOTH)
 
 		user_info_username_label = Label(user_info_username_frame, text='用户名:  ', height=2, anchor='e', width=15)
@@ -171,32 +173,32 @@ class application:
 		                                    anchor='w')
 		user_info_is_vip.pack(side=LEFT, expand=True, fill=BOTH)
 
-		user_info_sub_bottom_blank_frame = Frame(user_info_frame, bg=None, height=70, width=20)
+		user_info_sub_bottom_blank_frame = Frame(user_info_frame, bg=None, height=80, width=20)
 		user_info_sub_bottom_blank_frame.pack(side=TOP, fill=BOTH)
 
 		table_frame = Frame(left_frame, bg=None, height=400, width=500)
 		table_frame.pack(side=TOP, expand=True, fill=BOTH)
 
-		table_tk=self.table_tk = My_Tk(table_frame)
+		table_tk = self.table_tk = My_Tk(table_frame, user_info=self.user, cookies=base_cookies, headers=base_headers)
 		resources_list = self.resources_list = table_tk.get_tv()
 
-		# # 表格
-		# resources_list = self.resources_list = ttk.Treeview(table_frame, show="headings", padding=LEFT)
-		# resources_list.pack(fill=BOTH, expand=True, side=TOP, pady=30)
-		#
-		# # 定义列
-		# resources_list["columns"] = ("no", "name", "author")
-		# # 设置列，列还不显示
-		# resources_list.column("no", width=30, anchor='w')
-		# resources_list.column("name", width=170, anchor='w')
-		# resources_list.column("author", width=100, anchor='w')
-		#
-		# # 设置表头
-		# resources_list.heading("no", text="序号")
-		# resources_list.heading("name", text="名称")
-		# resources_list.heading("author", text="作者")
+	# # 表格
+	# resources_list = self.resources_list = ttk.Treeview(table_frame, show="headings", padding=LEFT)
+	# resources_list.pack(fill=BOTH, expand=True, side=TOP, pady=30)
+	#
+	# # 定义列
+	# resources_list["columns"] = ("no", "name", "author")
+	# # 设置列，列还不显示
+	# resources_list.column("no", width=30, anchor='w')
+	# resources_list.column("name", width=170, anchor='w')
+	# resources_list.column("author", width=100, anchor='w')
+	#
+	# # 设置表头
+	# resources_list.heading("no", text="序号")
+	# resources_list.heading("name", text="名称")
+	# resources_list.heading("author", text="作者")
 
-		self.root.mainloop()
+	# self.root.mainloop()
 
 	def login(self):
 		login_url = self.api_uri + "/login"
@@ -218,7 +220,7 @@ class application:
 			if data['status'] == 1:
 				self.rebind_user_info(data=data)
 				base_cookies["SERVICID"] = response.cookies.get("SERVERID")
-				print(response.cookies.get("Path"))
+				print(response.cookies)
 				self.user['token'] = data['token']
 
 	# messagebox.askyesno("确认吗？", message=json)
@@ -253,13 +255,13 @@ class application:
 		[self.resources_list.delete(node) for node in self.resources_list.get_children()]
 		print(data)
 		index = 0
-		rows=[]
+		rows = []
 		for resource in data['bookRes']['list']:
-			item = (index + 1, resource['title'], resource['author'])
+			fragementId = resource['fragementId']
+			item = (index + 1, resource['title'], resource['author'], fragementId)
 			rows.append(item)
 			index = index + 1
 		self.table_tk.insert_tv(rows)
-
 
 	def download(self):
 		pass
@@ -302,4 +304,4 @@ if __name__ == '__main__':
 	# win.maxsize(width=800,height=600)
 	win.resizable(width=False, height=False)
 	app = application(win)
-	app.run()
+	win.mainloop()
