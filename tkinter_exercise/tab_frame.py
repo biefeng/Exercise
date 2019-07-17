@@ -40,7 +40,7 @@ class Application_ui(Frame):
 
 		self.style = Style()
 
-		self.TabStrip1 = Notebook(self.top,takefocus='red')
+		self.TabStrip1 = Notebook(self.top, takefocus='red')
 		print(type(self.TabStrip1['takefocus']))
 		self.TabStrip1.place(relx=0.02, rely=0.005, relwidth=0.96, relheight=0.99)
 
@@ -48,15 +48,10 @@ class Application_ui(Frame):
 		self.home = main_page(self.TabStrip1__Tab1)
 		self.TabStrip1.add(self.TabStrip1__Tab1, text='首页')
 
-		# self.TabStrip1__Tab2 = Frame(self.TabStrip1)
-		# self.TabStrip1__Tab2Lbl = Label(self.TabStrip1__Tab2, text='Please add widgets in code.')
-		# self.TabStrip1__Tab2Lbl.place(relx=0.1, rely=0.5)
-		# self.TabStrip1.add(self.TabStrip1__Tab2, text='任务列表')
-		#
-		# self.TabStrip1__Tab2 = Frame(self.TabStrip1)
-		# self.TabStrip1__Tab2Lbl = Label(self.TabStrip1__Tab2, text='Please add widgets in code.')
-		# self.TabStrip1__Tab2Lbl.place(relx=0.1, rely=0.5)
-		# self.TabStrip1.add(self.TabStrip1__Tab2, text='下载设置')
+		self.TabStrip1__Tab2 = Frame(self.TabStrip1)
+		self.TabStrip1__Tab2Lbl = Label(self.TabStrip1__Tab2, bg='darkgray', text='Please add widgets in code.')
+		self.TabStrip1__Tab2Lbl.place(relx=0.02, rely=0.005, relwidth=0.96, relheight=0.99)
+		self.TabStrip1.add(self.TabStrip1__Tab2, text='任务列表')
 
 
 class Application(Application_ui):

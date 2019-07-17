@@ -1,7 +1,8 @@
 from tkinter import *
-from tkinter.ttk import Treeview,Style
+from tkinter.ttk import Treeview, Style
+from tkinter import  messagebox
 import requests
-
+import traceback
 
 class My_Tk():
 	def __init__(self, root, user_info=None, cookies=None, headers=None):
@@ -28,29 +29,72 @@ class My_Tk():
 		return self.tv
 
 	def download(self):
-		for k, v in self.orm.items():
-			button = self.orm[k][0]
-			button_value = button.getvar(button['variable'])
-			if button_value == '1':
-				print(self.tv.item(k, 'values'))
-				if self.user_info == None:
-					pass
-				else:
+		try:
+			for k, v in self.orm.items():
+				button = self.orm[k][0]
+				button_value = button.getvar(button['variable'])
+				if button_value == '1':
+					print(self.tv.item(k, 'values'))
+					if self.user_info == None:
+						pass
+					else:
+						params = {
+							'fragmentId': self.val_map[k],
+							'token': self.user_info['token'],
+							'albumId': 0,
+							'programId': 0
+						}
+						# self.base_cookies['SERVERID'] = "1ebdc1cc2a3d66d97da2b6d9c90558b4|1563213194|1563213193"
+						response = requests.post(url="http://api.dushu.io/fragment/content", json=params,
+						                         headers=self.base_headers, cookies=self.base_cookies)
+						mediaUrl = response.json()['mediaUrls'][0]
+						print(mediaUrl)
+						media_info_headers = {
+							'Host': "cdn-ali.dushu.io",
+							'Cookie': "grwng_uid=e7e51c80-ead6-43bb-9744-7531778d6c73; UM_distinctid=16be039d03e8aa-0f0e963eb0f589-621c740a-4a640-16be039d03f633; gr_user_id=ebc67f00-d109-4c29-80b0-7d631382debf",
+							'X-Playback-Session-Id': "D3192900-D956-4460-95F1-C4D28A144B3F",
+							'Range': "bytes=0-1",
+							'Accept': "*/*",
+							'User-Agent': "AppleCoreMedia/1.0.0.16D57 (iPhone; U; CPU OS 12_1_4 like Mac OS X; en_us)",
+							'Accept-Language': "en-us",
+							'Accept-Encoding': "identity",
+							'Connection': "keep-alive",
+							'Content-Type': "text/plain",
+							'cache-control': "no-cache"
+						}
+						media_info = requests.get(url=mediaUrl, headers=media_info_headers)
+						range_ = media_info.headers['Content-Range']
+						content_disposition = media_info.headers['Content-Disposition']
+						file_name = content_disposition[content_disposition.rfind('filename='):]
+						bytes_length = range_[range_.rfind('/') + 1:]
 
-					params = {
-						'fragmentId': self.val_map[k],
-						'token': self.user_info['token'],
-						'albumId': 0,
-						'programId': 0
-					}
-					# self.base_cookies['SERVERID'] = "1ebdc1cc2a3d66d97da2b6d9c90558b4|1563213194|1563213193"
-					response = requests.post(url="http://api.dushu.io/fragment/content", json=params,
-					                         headers=self.base_headers, cookies=self.base_cookies)
-					mediaUrl = response.json()['mediaUrls'][0]
-					print(mediaUrl)
-					print(self.val_map[k])
-			else:
-				pass
+						with open(r'downloaded.mp4', 'wb') as saved:
+							# for i in range(381):
+							# 	url = url_prefix + str(i + 1) + url_suffix
+							# 	response = requests.get(url=url, headers=headers)
+							# 	saved.write(bytes(response.content))
+							# 	print("请求到第" + str(i) + "个")
+							print("*************start download:" + file_name + "************")
+							print(type(bytes_length))
+							count = (int(bytes_length) + 1 - 131072) / 131072
+							print(count)
+							print(type(count))
+							for index in range(int(count)):
+								if index == count - 1:
+									media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
+										bytes_length)
+								else:
+									media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
+										(index + 1) * 131072 - 1)
+								media_content = requests.get(url=mediaUrl, headers=media_info_headers)
+								saved.write(bytes(media_content.content))
+								print("*************downloading************")
+
+						print(self.val_map[k])
+		except BaseException as e:
+			traceback.print_exc(file=open('error.txt', 'a+'))
+			messagebox.showerror("提示", message="下载出错")
+			print("下载出错")
 
 	def create_heading(self, ):
 		'''重新做一个treeview的头，不然滚动滚动条，看不到原先的头！！！'''
@@ -73,7 +117,7 @@ class My_Tk():
 
 		# 重建tree的头
 		for i in range(len(self.columns)):
-			Label(heading_frame,text=self.columns_header_name[i], width=int(self.header_label_widths[i] * 0.16),
+			Label(heading_frame, text=self.columns_header_name[i], width=int(self.header_label_widths[i] * 0.16),
 			      anchor='center',
 			      relief=GROOVE).pack(side=LEFT)
 
