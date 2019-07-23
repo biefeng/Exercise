@@ -29,7 +29,7 @@ base_headers = {
 	'X-DUSHU-APP-SYSVER': "Version 12.1.4 (Build 16D57)",
 	'X-DUSHU-APP-DEVID': "FD797288-5821-4A8B-9C21-187365BF8996",
 	'X-DUSHU-APP-DEVTOKEN': "d870663f9e3d09db02a987d58050b108db2cc0246f83144cbc19a82454fc4b48",
-	'Cookie': "grwng_uid=e7e51c80-ead6-43bb-9744-7531778d6c73; UM_distinctid=16be039d03e8aa-0f0e963eb0f589-621c740a-4a640-16be039d03f633; gr_user_id=ebc67f00-d109-4c29-80b0-7d631382debf",
+
 	'cache-control': "no-cache",
 }
 
@@ -281,6 +281,8 @@ class application:
 
 	def tranform_image(self, url):
 		# try:
+		if(url.startswith('https')):
+			url='http'+url[5:]
 		response = requests.get(
 			url=url)
 		# except BaseException:
