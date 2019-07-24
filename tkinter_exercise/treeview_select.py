@@ -3,10 +3,14 @@ from tkinter.ttk import Treeview, Style
 from tkinter import messagebox
 import requests
 import traceback
+from datetime import datetime
+from tkinter_exercise.tasklist import tasklist
+import threading
+from dateutil.parser._parser import parser
 
 
 class My_Tk():
-	def __init__(self, root, user_info=None, cookies=None, headers=None):
+	def __init__(self, root, user_info=None, cookies=None, headers=None, tasklist_=None):
 		self.tk = root
 		self.user_info = user_info
 		self.base_cookies = cookies
@@ -17,6 +21,7 @@ class My_Tk():
 		self.create_button()
 		self.create_heading()
 		self.create_tv()
+		self.tasklist_ = tasklist_
 
 	def create_button(self):
 		frame = Frame(self.tk, width=200, height=50)
@@ -40,15 +45,15 @@ class My_Tk():
 						pass
 					else:
 						params = {
-							'fragmentId': self.val_map[k]+1,
+							'fragmentId': self.val_map[k] + 1,
 							'token': self.user_info['token'],
 							'albumId': -8888888,
 							'programId': -8888888
 						}
-						# self.base_cookies['SERVERID'] = "1ebdc1cc2a3d66d97da2b6d9c90558b4|1563213194|1563213193"
 						response = requests.post(url="http://api.dushu.io/fragment/content", json=params,
 						                         headers=self.base_headers, cookies=self.base_cookies)
 						mediaUrl = response.json()['mediaUrls'][1]
+						file_name = response.json()['bookName']
 						print(mediaUrl)
 						media_info_headers = {
 							'Host': "cdn-ali.dushu.io",
@@ -68,32 +73,46 @@ class My_Tk():
 						media_info = requests.get(url=mediaUrl, headers=media_info_headers, cookies=self.base_cookies)
 
 						range_ = media_info.headers['Content-Range']
-						# content_disposition = media_info.headers['Content-Disposition']
-						# file_name = content_disposition[content_disposition.rfind('filename='):]
 						bytes_length = range_[range_.rfind('/') + 1:]
 
-						with open(r'downloaded.mp4', 'wb') as saved:
-							# for i in range(381):
-							# 	url = url_prefix + str(i + 1) + url_suffix
-							# 	response = requests.get(url=url, headers=headers)
-							# 	saved.write(bytes(response.content))
-							# 	print("请求到第" + str(i) + "个")
-							# print("*************start download:" + file_name + "************")
-							print(type(bytes_length))
-							count = (int(bytes_length) + 1 - 131072) / 131072
-							print(count)
-							print(type(count))
-							for index in range(int(count)):
-								if index == count - 1:
-									media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
-										bytes_length)
-								else:
-									media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
-										(index + 1) * 131072 - 1)
-								media_content = requests.get(url=mediaUrl, headers=media_info_headers,
-								                             cookies=self.base_cookies)
-								saved.write(bytes(media_content.content))
-								print("*************downloading" + str(index / count * 100) + "%************")
+						def donw():
+							with open(file_name + r'.mp4', 'wb') as saved:
+								row = (str(datetime.now().strftime("%Y%m%d%H%M%S")), file_name,
+								       self.tasklist_.catch_progress_bar())
+								self.tasklist_.insert_data(row)
+								# for i in range(381):
+								# 	url = url_prefix + str(i + 1) + url_suffix
+								# 	response = requests.get(url=url, headers=headers)
+								# 	saved.write(bytes(response.content))
+								# 	print("请求到第" + str(i) + "个")
+								# print("*************start download:" + file_name + "************")
+								print(type(bytes_length))
+								count = (int(bytes_length) + 1 - 131072) / 131072
+								print(count)
+								print(type(count))
+								tmp = 0
+								for index in range(int(count)):
+									if index == count - 1:
+										media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
+											bytes_length)
+									else:
+										media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
+											(index + 1) * 131072 - 1)
+									media_content = requests.get(url=mediaUrl, headers=media_info_headers,
+									                             cookies=self.base_cookies)
+									saved.write(bytes(media_content.content))
+									tmp = tmp + 1
+									print(count)
+									if (tmp > count / 100):
+										print(tmp)
+										self.tasklist_.progress(row[2], index / count * 230)
+										tmp = 0
+
+									print("*************downloading" + str(index / count * 100) + "%************")
+
+						th = threading.Thread(target=donw)
+						th.setDaemon(True)
+						th.start()
 
 						print(self.val_map[k])
 		except BaseException as e:

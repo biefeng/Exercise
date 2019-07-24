@@ -42,12 +42,13 @@ base_cookies = {
 
 
 class application:
-	def __init__(self, root):
+	def __init__(self, root,tasklist_):
 		self.root = root
 		self.api_uri = r"http://api.dushu.io"
 		self.gateway_url = r"http://gateway-api.dushu.io"
 		self.user = {}
 		self.req_prop = {}
+		self.tasklist_=tasklist_
 		root.bind("<Button-3>", self.showMenu)
 		self.window(root)
 
@@ -179,7 +180,7 @@ class application:
 		table_frame = Frame(left_frame, bg=None, height=400, width=500)
 		table_frame.pack(side=TOP, expand=True, fill=BOTH)
 
-		table_tk = self.table_tk = My_Tk(table_frame, user_info=self.user, cookies=base_cookies, headers=base_headers)
+		table_tk = self.table_tk = My_Tk(table_frame, user_info=self.user, cookies=base_cookies, headers=base_headers,tasklist_=self.tasklist_)
 		resources_list = self.resources_list = table_tk.get_tv()
 
 	# # 表格
@@ -219,7 +220,7 @@ class application:
 		else:
 			if data['status'] == 1:
 				self.rebind_user_info(data=data)
-				base_cookies["SERVICID"] = response.cookies.get("SERVERID")
+				base_cookies["SERVERID"] = response.cookies.get("SERVERID")
 				print(response.cookies)
 				self.user['token'] = data['token']
 
