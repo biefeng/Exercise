@@ -23,21 +23,20 @@ base_headers = {
 	'X-DUSHU-APP-MUID': "A2E139A0-FDA6-49F4-A40B-A9A8E2CF049F",
 	'Accept-Encoding': "br, gzip, deflate",
 	'Content-Type': "application/json; charset=utf-8",
-	'Content-Length': "35",
 	'User-Agent': "bookclub/3.9.46 (iPhone; iOS 12.1.4; Scale/3.00)",
 	'Connection': "keep-alive",
 	'X-DUSHU-APP-SYSVER': "Version 12.1.4 (Build 16D57)",
 	'X-DUSHU-APP-DEVID': "FD797288-5821-4A8B-9C21-187365BF8996",
 	'X-DUSHU-APP-DEVTOKEN': "d870663f9e3d09db02a987d58050b108db2cc0246f83144cbc19a82454fc4b48",
-
 	'cache-control': "no-cache",
 }
 
 base_cookies = {
-	'SERVERID': 'd7c5f70e8bbeb7d0895e8aa597313688|1563065890|1563065883',
 	'grwng_uid': 'e7e51c80-ead6-43bb-9744-7531778d6c73',
 	'UM_distinctid': '16be039d03e8aa-0f0e963eb0f589-621c740a-4a640-16be039d03f633',
 	'gr_user_id': 'ebc67f00-d109-4c29-80b0-7d631382debf'
+
+
 }
 
 
