@@ -290,8 +290,8 @@ class application:
 		# else:
 		image = Image.open(BytesIO(response.content))
 		image = image.resize((40, 40), Image.ANTIALIAS)
-		image.save(r"images\avatar.ppm")
-		return PhotoImage(file=r'images\avatar.ppm')
+		image.save(r"avatar_new.ppm")
+		return PhotoImage(file=r'avatar_new.ppm')
 
 
 # table_frame = Frame(win, bg="blue")

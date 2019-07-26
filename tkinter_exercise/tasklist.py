@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = '33504'
 
+import csv
 from tkinter import *
 from tkinter import filedialog, messagebox
 
@@ -10,6 +11,25 @@ class tasklist:
     def __init__(self):
         self.index = 1
         self.rows = {}
+
+    def load_download_history(self):
+        try:
+            with open("download_history.csv", "r", newline="\n", encoding="gbk") as history:
+                reader = csv.reader(history, delimiter=r" ")
+                for row in reader:
+                    bg = "green"
+                    if row[3] == "失败":
+                        bg = "red"
+                    row.insert(len(row) - 1, self.catch_progress_bar(bg=bg))
+                    self.insert_data(row)
+        except FileNotFoundError as e:
+            print("未找到历史下载记录文件")
+
+    def append_download_history(self, row):
+        with open("download_history.csv", "a", newline="\n", encoding="gbk") as history:
+            writer = csv.writer(history, delimiter=" ")
+            row[3] = row[3].get()
+            writer.writerows([row])
 
     def test(self):
         lineheight = 25
@@ -24,11 +44,11 @@ class tasklist:
             print("index: " + str(i))
         print("finished")
 
-    def catch_progress_bar(self):
-        progress_bar = Frame(self.progress_bar_frame)
-        progress_bar.pack(side=TOP)
-        canvas = Canvas(progress_bar, width=235, height=19, bg='grey')
-        canvas.pack(side=TOP)
+    def catch_progress_bar(self, bg="grey"):
+        self.sub_progress_bar = Frame(self.progress_bar_frame, width=235, bg="red")
+        self.sub_progress_bar.pack(side=TOP, pady=0.5)
+        canvas = Canvas(self.sub_progress_bar, width=165, height=19, bg=bg)
+        canvas.pack(side=LEFT, expand=False)
         return canvas
 
     def insert_data(self, row):
@@ -42,8 +62,14 @@ class tasklist:
         name = Label(self.download_time_frame, text=row[2], bg="orange")
         name.pack(side=TOP, pady=0.5, fill=X)
 
-        self.progress_bar = Frame(self.progress_bar_frame, bg="orange")
-        self.progress_bar.pack(side=TOP, pady=0.5, fill=X)
+        if type(row[4]) == StringVar:
+            Label(self.sub_progress_bar, textvariable=row[4], bg='orange').pack(side=LEFT)
+        elif type(row[4]) == str:
+            Label(self.sub_progress_bar, text=row[4], bg='orange').pack(side=LEFT)
+
+        #
+        # self.progress_bar = Frame(self.progress_bar_frame, bg="orange")
+        # self.progress_bar.pack(side=TOP, pady=0.5, fill=X)
 
         # canvas = Canvas(self.progress_bar, width=235, height=19, bg='white')
         # canvas.pack(side=TOP, expand=True, fill=BOTH)
@@ -73,7 +99,7 @@ class tasklist:
         download_dir_label = Label(tv, text="下载路径: ", font=("黑体", 12), bg="white")
         download_dir_label.place(x=25, y=20)
 
-        self.download_dir = StringVar(value=r"d:\\")
+        self.download_dir = StringVar(value=r"d:")
         self.download_dir_entry = Entry(tv, bd=2, textvariable=self.download_dir, state="readonly")
         self.download_dir_entry.place(x=115, y=21, width=500, height=23)
 
@@ -130,6 +156,9 @@ class tasklist:
 
         self.progress_bar_frame = Frame(frame, bd=2, relief=RIDGE, bg="white")
         self.progress_bar_frame.place(relx=0.7, rely=0.005, relwidth=0.27, relheight=0.99)
+
+        # 加载历史记录
+        self.load_download_history()
 
 
 if __name__ == '__main__':

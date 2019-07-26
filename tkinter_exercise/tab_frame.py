@@ -32,8 +32,9 @@ class Application_ui(Frame):
     # 这个类仅实现界面生成功能，具体事件处理代码在子类Application中。
     def __init__(self, master=None):
         Frame.__init__(self, master)
-        self.master.title('Form1')
+        self.master.title('樊登下载工具')
         self.master.geometry('850x650+400+250')
+
         self.createWidgets()
 
     def createWidgets(self):
@@ -119,4 +120,6 @@ class Application(Application_ui):
 
 if __name__ == "__main__":
     top = Tk()
+    top.resizable(width=False, height=False)
+    top.iconbitmap("favicon.ico")
     Application(top).mainloop()

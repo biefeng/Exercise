@@ -132,7 +132,7 @@ class My_Tk():
                         media_info_headers['Host'] = host_
 
                         media_info = requests.get(url=mediaUrl, headers=media_info_headers, cookies=self.base_cookies)
-                        file_des = self.tasklist_.download_dir.get() + file_name + media_type
+                        file_des = self.tasklist_.download_dir.get()+r"\\" + file_name + media_type
                         bytes_length = 0
                         if "Content-Range" in media_info.headers:
                             range_ = media_info.headers['Content-Range']
@@ -144,52 +144,75 @@ class My_Tk():
 
                         def down():
 
-                            with open(file_des, 'wb') as saved:
-                                row = (str(datetime.now().strftime("%Y%m%d%H%M%S")), file_name + media_type,
+                            try:
+                                row = [str(datetime.now().strftime("%Y%m%d%H%M%S")), file_name + media_type,
                                        datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                                       self.tasklist_.catch_progress_bar())
-                                self.tasklist_.insert_data(row)
-                                media_info_content = media_info.content
-                                play_list_pattern = re.compile(r",.*?(\\w+?\\.mp4_[0-9]+\\.ts)",re.DOTALL)
-                                play_list = []
-                                if type(media_info_content) != str:
-                                    play_list_pattern.findall(str(media_info_content))
+                                       self.tasklist_.catch_progress_bar(), StringVar(value="0")]
+                                with open(file_des, 'wb') as saved:
 
-                                threading.Thread(
-                                    target=lambda: {messagebox.showinfo(title="提示", message="请前往任务列表查看下载状态")}).start()
-                                if play_list != None and len(play_list) == 0:
-                                    if int(bytes_length) <= 0:
-                                        return
-                                    print(type(bytes_length))
-                                    count = (int(bytes_length) + 1 - 131072) / 131072
-                                    print(count)
-                                    print(type(count))
-                                    tmp = 0
-                                    for index in range(int(count)):
-                                        if index == count - 1:
-                                            media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
-                                                bytes_length)
-                                        else:
-                                            media_info_headers['Range'] = "bytes=" + str(index * 131072) + "-" + str(
-                                                (index + 1) * 131072 - 1)
-                                        media_content = requests.get(url=mediaUrl, headers=media_info_headers,
-                                                                     cookies=self.base_cookies)
-                                        saved.write(bytes(media_content.content))
-                                        tmp = tmp + 1
+                                    self.tasklist_.insert_data(row)
+                                    media_info_content = media_info.content
+                                    play_list_pattern = re.compile("(\w+\.mp4_[\d]+\.ts)", re.DOTALL)
+                                    play_list = []
+                                    if type(media_info_content) != str:
+                                        play_list = play_list_pattern.findall(str(media_info_content))
+
+                                    threading.Thread(
+                                        target=lambda: {
+                                            messagebox.showinfo(title="提示", message="请前往任务列表查看下载状态")}).start()
+                                    if play_list != None and len(play_list) == 0:
+                                        if int(bytes_length) <= 0:
+                                            return
+                                        print(type(bytes_length))
+                                        count = (int(bytes_length) + 1 - 131072) / 131072
                                         print(count)
-                                        if (tmp > count / 100):
-                                            print(tmp)
-                                            self.tasklist_.progress(row[3], index / count * 225)
-                                            tmp = 0
+                                        print(type(count))
+                                        tmp = 0
+                                        for index in range(int(count)):
+                                            if index == count - 1:
+                                                media_info_headers['Range'] = "bytes=" + str(
+                                                    index * 131072) + "-" + str(
+                                                    bytes_length)
+                                            else:
+                                                media_info_headers['Range'] = "bytes=" + str(
+                                                    index * 131072) + "-" + str(
+                                                    (index + 1) * 131072 - 1)
+                                            media_content = requests.get(url=mediaUrl, headers=media_info_headers,
+                                                                         cookies=self.base_cookies)
+                                            saved.write(bytes(media_content.content))
+                                            tmp = tmp + 1
+                                            print(count)
+                                            if (tmp > count / 100):
+                                                print(tmp)
+                                                self.tasklist_.progress(row[3],
+                                                                        index / count * 164)  # 比其所在canvas宽度小1，百分之99即撑满整个进度条
+                                                tmp = 0
+                                            row[4].set(str(int(index / count * 100)) + "%")
+                                            print(
+                                                "*************downloading" + str(index / count * 100) + "%************")
+                                    else:
+                                        for index, play_url in enumerate(play_list):
+                                            tmp_media_url = mediaUrl[:mediaUrl.rfind("/") + 1] + play_url[1:]
+                                            response = requests.get(url=tmp_media_url, headers=media_info_headers,
+                                                                    cookies=self.base_cookies)
+                                            if response.status_code == 200:
+                                                saved.write(bytes(response.content))
+                                                self.tasklist_.progress(row[3],
+                                                                        index / len(
+                                                                            play_list) * 164)  # 比其所在canvas宽度小1，百分之99即撑满整个进度条
+                                                print("*************downloading" + str(
+                                                    index / len(play_list) * 100) + "%**************")
+                                                row[4].set(str(int(index / len(play_list) * 100)) + "%")
 
-                                        print("*************downloading" + str(index / count * 100) + "%************")
-                                else:
-                                    for play_url in play_list:
-                                        tmp_media_url = mediaUrl[mediaUrl.lastindex(r"\\"):] + play_url[1:]
-                                        response = requests.get(url=tmp_media_url, headers=media_info_headers,
-                                                                cookies=self.base_cookies)
-                                        if response.status_code == "200":
-                                            saved.write(bytes(response.content))
+                            except BaseException as e:
+                                row[4].set("失败")
+                                row.pop(3)
+                                self.tasklist_.append_download_history(row)
+                                messagebox.showinfo("错误", message=str(e))
+                            else:
+                                row[4].set("100%")
+                                row.pop(3)
+                                self.tasklist_.append_download_history(row)
                                 messagebox.showinfo("提示", message=file_name + "下载完成！")
 
                         th = threading.Thread(target=down)
