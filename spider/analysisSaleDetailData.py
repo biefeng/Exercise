@@ -7,7 +7,7 @@ import matplotlib.dates as dates
 import matplotlib.pyplot as plt
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\33504\Desktop\sale_detail.csv", delimiter=r" ",
+df = pd.read_csv(r"sale_detail.csv", delimiter=r" ",
                  usecols=lambda x: x in ['createDateStr', 'amount'])
 
 df.createDateStr = pd.to_datetime(df.createDateStr).dt.date
@@ -19,6 +19,6 @@ for name, group in df[df.createDateStr > date(2019, 6, 5)].groupby('createDateSt
 # d = dict({str(name): group.sum().values[0]})
 plt.plot(list(data.keys()), list(data.values()))
 ax = plt.gca()
-# ax.xaxis.set_major_locator(dates.WeekdayLocator(byweekday=1))
-# ax.xaxis.set_major_formatter(dates.DateFormatter("%m%d/"))
+ax.xaxis.set_major_locator(dates.WeekdayLocator(byweekday=1))
+ax.xaxis.set_major_formatter(dates.DateFormatter("%m%d/"))
 plt.show()

@@ -6,7 +6,7 @@ from xlwt import Workbook, XFStyle, Font, Borders, Pattern, Style, Alignment
 from csv import DictWriter
 
 DEV = {'host': '10.128.62.33', 'user': 'root', 'password': 'root', 'database': 'jy_catering'}
-PROD = {'host': '172.16.1.106', 'user': 'root', 'password': 'JY@myt11', 'database': 'jy_catering'}
+PROD = {'host': '172.16.1.106', 'user': 't11developer', 'password': 'JYwl@2019', 'database': 'jy_catering'}
 
 BASE_WIN_OUTPUT_PATH = 'd:/'
 profiles = {'dev': DEV, 'prod': PROD}
@@ -16,18 +16,20 @@ class Export:
     def export_to_csv(self, **kwargs):
         limit = 10000
         count = self.get_data_scale(**kwargs)['count']
+        print("***************************************共计：d%条", count)
         times = (count + limit - 1) // limit
 
         add_header = False
-        for i in range(times):
-            kwargs["startIndex"] = i * limit + 1
-            kwargs['endIndex'] = (i + 1) * limit + 1
+        dict_writer = None
+        with open('result.csv', 'w', newline='') as csvfile:
+            for i in range(times):
+                kwargs["startIndex"] = i * limit + 1
+                # kwargs['endIndex'] =(i + 1) * limit
+                kwargs['endIndex'] = limit
+                print("第%d条至第%d条", kwargs["startIndex"], (i + 1) * limit)
 
-            records = self.get_data(**kwargs)
-            with open('result.csv', 'w', newline='') as csvfile:
-                dict_writer = None
+                records = self.get_data(**kwargs)
                 column_names = []
-
                 for data in records:
                     if not add_header:
                         for column_name in data.keys():
@@ -123,7 +125,7 @@ class Export:
     def export(self):
         args = sys.argv[1:]
         opts, args = getopt.getopt(args, "hd:s:p:")
-        props = {"profiles": "DEV"}
+        props = {"profiles": "dev"}
         for opt, arg in opts:
             if opt == '-h':
                 print("python export_to_excel.py -d <database> -s <sql> -p <profile> ")
@@ -136,10 +138,9 @@ class Export:
                 props['profiles'] = arg
             elif opt == '-o':
                 props['output_path'] = arg
-
         profiles[props['profiles']]['sql'] = props['sql']
 
-        self.export_to_excel(**profiles[props['profiles']])
+        self.export_to_csv(**profiles[props['profiles']])
 
 
 if "__main__" == __name__:
