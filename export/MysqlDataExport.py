@@ -1,19 +1,23 @@
 # *- coding=utf-8 -*
+# /bin/bash
 import getopt
 import sys
-import pymysql
-from xlwt import Workbook, XFStyle, Font, Borders, Pattern, Style, Alignment
 from csv import DictWriter
 
+import pymysql
+from xlwt import Workbook, XFStyle, Font, Borders, Pattern, Style, Alignment
+
 DEV = {'host': '10.128.62.33', 'user': 'root', 'password': 'root', 'database': 'jy_catering'}
-PROD = {'host': '172.16.1.106', 'user': 't11developer', 'password': 'JYwl@2019', 'database': 'jy_catering'}
+CATERING_PROD = {'host': '172.16.1.106', 'user': 't11developer', 'password': 'JYwl@2019', 'database': 'jy_catering'}
+ORDER_PROD = {'host': '172.16.1.154', 'user': 't11developer', 'password': 'JYwl@2019', 'database': 'jy_order'}
 
 BASE_WIN_OUTPUT_PATH = 'd:/'
-profiles = {'dev': DEV, 'prod': PROD}
+profiles = {'dev': DEV, 'cateringProd': CATERING_PROD, "orderProd": ORDER_PROD}
 
 
 class Export:
     def export_to_csv(self, **kwargs):
+        print("--------args:" + str(kwargs))
         limit = 10000
         count = self.get_data_scale(**kwargs)['count']
         print("***************************************共计：d%条", count)
@@ -21,7 +25,16 @@ class Export:
 
         add_header = False
         dict_writer = None
-        with open('result.csv', 'w', newline='') as csvfile:
+        output_file = "result.csv"
+        try:
+            if 'output' in kwargs:
+                output_file = kwargs['output']
+            elif 'table' in kwargs:
+                output_file = kwargs['table'] + ".csv"
+        except Exception as e:
+            print(e)
+        print(output_file)
+        with open(output_file, 'w') as csvfile:
             for i in range(times):
                 kwargs["startIndex"] = i * limit + 1
                 # kwargs['endIndex'] =(i + 1) * limit
@@ -38,6 +51,53 @@ class Export:
                         dict_writer = DictWriter(csvfile, fieldnames=column_names, delimiter=" ")
                         dict_writer.writeheader()
                     dict_writer.writerow(data)
+
+    def export_to_inserts(self, **kwargs):
+        prop = {'host': '192.168.186.135', 'user': 'root', 'password': 'Biefeng123!', 'database': 'recosys'}
+        insert_connection = pymysql.connect(host=prop['host'], user=prop['user'], password=prop['password'],
+                                            database=prop['database'])
+        insert_cursor = insert_connection.cursor(cursor=pymysql.cursors.DictCursor)
+
+        limit = 10000
+        count = self.get_data_scale(**kwargs)['count']
+        print("***************************************共计：d%条", count)
+        times = (count + limit - 1) // limit
+
+        init = False
+        insert_sql = ""
+
+        with open('result.sql', 'w', encoding="utf-8") as sqlfile:
+            for i in range(times):
+                kwargs["startIndex"] = i * limit + 1
+                # kwargs['endIndex'] =(i + 1) * limit
+                kwargs['endIndex'] = limit
+                print("第%d条至第%d条", kwargs["startIndex"], (i + 1) * limit)
+
+                records = self.get_data(**kwargs)
+                column_names = []
+                for data in records:
+                    if not init:
+                        insert_sql = "insert into " + kwargs['tableName'] + "("
+                        for column_name in data.keys():
+                            insert_sql = insert_sql + column_name + ","
+                        init = True
+                        insert_sql = insert_sql[:len(insert_sql) - 1] + ") values ("
+                        print(insert_sql)
+                    temp = insert_sql
+                    for (key, value) in data.items():
+
+                        if value is None:
+                            temp = temp + "NULL" + ","
+                        else:
+                            temp = temp + "'" + str(value) + "'" + ","
+                    temp = temp[:len(temp) - 1] + ");\r\n"
+                    # print(temp)
+                    insert_cursor.execute(temp)
+                    insert_connection.commit()
+                    try:
+                        sqlfile.write(temp)
+                    except Exception as e:
+                        print(e)
 
     def export_to_excel(self, **kwargs):
         work_book = Workbook(encoding="ascii")
@@ -124,25 +184,36 @@ class Export:
 
     def export(self):
         args = sys.argv[1:]
-        opts, args = getopt.getopt(args, "hd:s:p:")
+        opts, args = getopt.getopt(args, "hd:s:p:t:")
+        print(opts)
         props = {"profiles": "dev"}
         for opt, arg in opts:
             if opt == '-h':
                 print("python export_to_excel.py -d <database> -s <sql> -p <profile> ")
                 sys.exit(1)
             elif opt == '-d':
-                profiles[props['profiles']]['database'] = props['database']
+                print(props)
+                props['database'] = profiles[props['profiles']]['database']
             elif opt == '-s':
                 props['sql'] = arg
+            elif opt == '-t':
+                props['table'] = arg
             elif opt == '-p':
                 props['profiles'] = arg
             elif opt == '-o':
                 props['output_path'] = arg
+
         profiles[props['profiles']]['sql'] = props['sql']
+        profiles[props['profiles']]['database'] = props['database']
+        profiles[props['profiles']]['table'] = props['table']
 
         self.export_to_csv(**profiles[props['profiles']])
 
 
 if "__main__" == __name__:
     e = Export()
+    # prop = CATERING_PROD
+    # prop['sql'] = "select * from catering_task order by order_time"
+    # prop['tableName'] = "catering_task"
+    # e.export_to_inserts(**prop)
     e.export()
