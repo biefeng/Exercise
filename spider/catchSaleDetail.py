@@ -3,26 +3,34 @@ import requests
 
 url = "http://web.myt11.com/finance/orderLedger/listData"
 headers = {
-    'sid': 'f07f86912fad4e05b83cb3618fb2c225'
+    "app": "nosession"
 }
-parameters = {"orderId": "", "originalBillId": "", "orderPlatform": "", "dataSource": "", "storeId": "", "payType": "",
-              "payChannel": "", "tradeDateStart": "", "tradeDateEnd": "", "pageNo": 1, "pageSize": 50}
+parameters = {"orderId": "", "originalBillId": "", "orderPlatform": "", "dataSource": "", "storeId": 12001,
+              "payType": "", "payChannel": "", "reconStatus": "", "tradeDateStart": "",
+              "tradeDateEnd": "", "pageNo": 1, "pageSize": 50}
 
 flag = True
-with open("sale_detail.csv", 'w', encoding='utf-8', newline="\n") as csv_file:
+with open("sale_detail_6_2.csv", 'w', encoding='utf-8', newline="\n") as csv_file:
     response = requests.post(url=url, headers=headers, json=parameters)
+    # print(response.content)
     detailList = response.json()['data']['list']
-    fields = list(detailList[0].keys())
-    fields.append('orderSource')
-    fields.append("refundTypeStr")
-    fields.append("refundType")
-    fields.append("remark")
-    writer = csv.DictWriter(csv_file, fieldnames=fields, delimiter=r" ")
+    fields = set(detailList[0].keys())
+    fields.add('orderSource')
+    fields.add("refundTypeStr")
+    fields.add("refundType")
+    fields.add("remark")
+    fields.add("accountSn")
+    fields.add("thirdPartChannelStr")
+    fields.add("thirdPartChannel")
+    fields.add("thirdPartPayChannel")
+    fields.add("orderTypeStr")
+    fields.add("orderType")
+    writer = csv.DictWriter(csv_file, fieldnames=list(fields), delimiter=r" ")
     writer.writeheader()
     while flag == True:
         response = requests.post(url=url, headers=headers, json=parameters)
         detailList = response.json()['data']['list']
-        if len(detailList) > 0 and parameters['pageNo'] <= 2000:
+        if len(detailList) > 0 and parameters['pageNo'] <= 4000:
             for row in detailList:
                 writer.writerow(row)
             parameters['pageNo'] = parameters['pageNo'] + 1
