@@ -11,10 +11,12 @@ import wx
 import wx.xrc
 import wx.dataview
 
-
 ###########################################################################
 ## Class MyFrame1
 ###########################################################################
+from kazoo.client import KazooClient
+
+
 class MyProgressBarDialog(wx.Dialog):
 
     def __init__(self):
@@ -31,11 +33,26 @@ class MyProgressBarDialog(wx.Dialog):
 
 class MyFrame1(wx.Frame):
     def search(self, evt):
-        dialog = MyProgressBarDialog()
-        dialog.ShowModal()
-        print(dialog)
+        value = self.m_textCtrl8.GetValue()
+        self.treeify_recursive("/", self.root_node, self.m_treeCtrl7)
+
+    def treeify_recursive(self, path, parent, tree):
+        client = self._zk_client
+        cd = client.get_children(path=path)
+        if cd and len(cd) > 0:
+            for i, c in enumerate(cd):
+                tmp_path = path + c + '/'
+                tc = client.get_children(tmp_path)
+                if tc and len(tc) > 0:
+                    insert = tree.AppendItem(parent, c, 0)
+                    self.treeify_recursive(path=tmp_path, parent=insert, tree=tree)
+                else:
+                    tree.AppendItem(parent, c, 1)
 
     def __init__(self, parent):
+
+        self._zk_client = KazooClient("localhost:2181")
+        self._zk_client.start()
         wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=wx.EmptyString, pos=wx.DefaultPosition, size=wx.Size(1029, 722), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
 
         self.SetSizeHintsSz(wx.DefaultSize, wx.DefaultSize)
@@ -77,6 +94,8 @@ class MyFrame1(wx.Frame):
 
         self.m_treeCtrl7 = wx.TreeCtrl(self.m_panel8, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0)
         bSizer20.Add(self.m_treeCtrl7, 1, wx.ALL | wx.EXPAND, 5)
+
+        self.root_node = self.m_treeCtrl7.AddRoot("/")
 
         self.m_panel8.SetSizer(bSizer20)
         self.m_panel8.Layout()
