@@ -2,7 +2,7 @@
 # /bin/bash
 import getopt
 import sys
-from csv import DictWriter
+from csv import DictWriter,DictReader
 
 import pymysql
 from xlwt import Workbook, XFStyle, Font, Borders, Pattern, Style, Alignment
@@ -210,10 +210,39 @@ class Export:
         self.export_to_csv(**profiles[props['profiles']])
 
 
+class Import():
+    def __init__(self, host, database, user, password):
+        self._connect = pymysql.connect(host=host, password=password, user=user, database=database)
+        self._cursor = self._connect.cursor(cursor=pymysql.cursors.Cursor)
+        self.database = database
+        self.user = user
+        self.password = password
+
+    def import_csv(self, fn, table_name, delimiter=" "):
+        with open(fn, mode='r',encoding='utf-8') as cf:
+            reader = DictReader(cf, delimiter=delimiter)
+            sql = "insert into {0}({1})values ({2});"
+            for row in reader:
+                keys = list(row.keys())
+                keys.remove('id')
+                colums = str(keys)[1:len(str(keys)) - 1].replace("'", "")
+                value_arr = []
+                for key in keys:
+                    value_arr.append(row[key])
+                values = str(value_arr)[1:len(str(value_arr)) - 1]
+                tmp = sql.format(table_name, colums, values)
+                try:
+                    self._cursor.execute(tmp)
+                except Exception as e:
+                    print(tmp)
+        self._connect.commit()
+
 if "__main__" == __name__:
-    e = Export()
+    # e = Export()
     # prop = CATERING_PROD
     # prop['sql'] = "select * from catering_task order by order_time"
     # prop['tableName'] = "catering_task"
     # e.export_to_inserts(**prop)
-    e.export()
+    # e.export()
+    im = Import("baiduyun", "blog_mini", "root", "Biefeng123!")
+    im.import_csv("D:\\Download\chromePlugin\\2020-6-20\\chrome_plugin_url.csv", "chrome_plugin")
