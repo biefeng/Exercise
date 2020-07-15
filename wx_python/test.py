@@ -10,8 +10,7 @@
 import wx
 import wx.dataview
 import wx.xrc
-import urllib.parse
-
+from kazoo.security import ACL
 ###########################################################################
 ## Class MyFrame1
 ###########################################################################
@@ -34,10 +33,8 @@ class MyDialog1(wx.SingleChoiceDialog):
 
 class MyFrame1(wx.Frame):
     def search(self, evt):
-        value = self.m_textCtrl8.GetValue()
+        # value = self.m_textCtrl8.GetValue()
         self.treeify_recursive("/", self.root_node, self.m_treeCtrl7)
-        dialog_ = MyDialog1(self)
-        dialog_.ShowModal()
 
     def treeify_recursive(self, path, parent, tree):
         client = self._zk_client
@@ -52,9 +49,19 @@ class MyFrame1(wx.Frame):
                 else:
                     tree.AppendItem(parent, c, 1)
 
-    def load_data(self):
-        print("load data")
-        pass
+    def load_data(self, event):
+        item = event.GetItem()
+        path = self.get_current_path(item)
+        client = self._zk_client
+        data, state = client.get(path)
+        if data is not None:
+            self.m_textCtrl10.SetValue(data)
+        self.m_dataViewListCtrl1.DeleteAllItems()
+        for field in state._fields:
+            value = getattr(state, field)
+            self.m_dataViewListCtrl1.AppendItem([field, str(value)])
+        acls,id = client.get_acls(path)
+        print(acls)
 
     def get_current_path(self, item):
         tree = self.m_treeCtrl7
@@ -95,8 +102,8 @@ class MyFrame1(wx.Frame):
 
     def __init__(self, parent):
 
-        # self._zk_client = KazooClient("localhost:2181")
-        self._zk_client = KazooClient(hosts='10.128.62.34:2181,10.128.62.34:2182,10.128.62.34:2183')
+        self._zk_client = KazooClient("localhost:2181")
+        # self._zk_client = KazooClient(hosts='10.128.62.34:2181,10.128.62.34:2182,10.128.62.34:2183')
         self._zk_client.start()
 
         wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=wx.EmptyString, pos=wx.DefaultPosition, size=wx.Size(1029, 722), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
@@ -149,6 +156,7 @@ class MyFrame1(wx.Frame):
         self.m_treeCtrl7.AssignImageList(imglist)
 
         self.m_treeCtrl7.Bind(wx.EVT_TREE_ITEM_MENU, self.TreeCtlOnContextMenu)
+        self.m_treeCtrl7.Bind(wx.EVT_TREE_SEL_CHANGING, self.load_data)
 
         self.m_menu21 = wx.Menu()
         self.m_menu21_m_menuItem1 = wx.MenuItem(self.m_menu21, wx.ID_ANY, u"copy path", wx.EmptyString, wx.ITEM_NORMAL)
@@ -178,7 +186,7 @@ class MyFrame1(wx.Frame):
         self.m_panel11 = wx.Panel(self.m_notebook1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL)
         bSizer21 = wx.BoxSizer(wx.VERTICAL)
 
-        self.m_button5 = wx.Button(self.m_panel11, wx.ID_ANY, u"保存", wx.DefaultPosition, wx.DefaultSize, 0)
+        self.m_button5 = wx.Button(self.m_panel11, wx.ID_ANY, u"save", wx.DefaultPosition, wx.DefaultSize, 0)
         bSizer21.Add(self.m_button5, 0, wx.ALL, 5)
 
         self.m_textCtrl10 = wx.TextCtrl(self.m_panel11, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.DefaultSize, wx.TE_MULTILINE | wx.TE_WORDWRAP)
@@ -189,19 +197,20 @@ class MyFrame1(wx.Frame):
         self.m_panel11.SetSizer(bSizer21)
         self.m_panel11.Layout()
         bSizer21.Fit(self.m_panel11)
-        self.m_notebook1.AddPage(self.m_panel11, u"Node data", False)
+        self.m_notebook1.AddPage(self.m_panel11, u"Node data", True)
         self.m_panel12 = wx.Panel(self.m_notebook1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL)
         bSizer8 = wx.BoxSizer(wx.VERTICAL)
 
-        self.m_dataViewListCtrl1 = wx.dataview.DataViewListCtrl(self.m_panel12, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0)
-        self.m_dataViewListColumn1 = self.m_dataViewListCtrl1.AppendTextColumn(u"Name")
+        self.m_dataViewListCtrl1 = wx.dataview.DataViewListCtrl(self.m_panel12, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, style=wx.dataview.DV_HORIZ_RULES | wx.dataview.DV_VERT_RULES)
+        self.m_dataViewListColumn1 = self.m_dataViewListCtrl1.AppendTextColumn(u"Name", width=350)
         self.m_dataViewListColumn2 = self.m_dataViewListCtrl1.AppendTextColumn(u"Value")
-        bSizer8.Add(self.m_dataViewListCtrl1, 1, wx.ALL | wx.EXPAND, 5)
 
+        bSizer8.Add(self.m_dataViewListCtrl1, 1, wx.ALL | wx.EXPAND, 5)
+        # self.m_propertyGrid1 = pg.PropertyGrid(self.m_panel12, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.propgrid.PG_DEFAULT_STYLE | wx.propgrid.PG_SPLITTER_AUTO_CENTER)
         self.m_panel12.SetSizer(bSizer8)
         self.m_panel12.Layout()
         bSizer8.Fit(self.m_panel12)
-        self.m_notebook1.AddPage(self.m_panel12, u"Node Metadata", True)
+        self.m_notebook1.AddPage(self.m_panel12, u"Node Metadata", False)
         self.m_panel13 = wx.Panel(self.m_notebook1, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.TAB_TRAVERSAL)
         self.m_notebook1.AddPage(self.m_panel13, u"Node Acl", False)
 
