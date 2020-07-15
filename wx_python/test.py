@@ -8,8 +8,9 @@
 ###########################################################################
 
 import wx
-import wx.xrc
 import wx.dataview
+import wx.xrc
+import urllib.parse
 
 ###########################################################################
 ## Class MyFrame1
@@ -17,24 +18,26 @@ import wx.dataview
 from kazoo.client import KazooClient
 
 
-class MyProgressBarDialog(wx.Dialog):
+class MyDialog1(wx.SingleChoiceDialog):
 
-    def __init__(self):
-        wx.Dialog.__init__(self, None, -1)
+    def __init__(self, parent):
+        # wx.Dialog.__init__(self, parent, id=wx.ID_ANY, title=wx.EmptyString, pos=wx.DefaultPosition, size=wx.DefaultSize, style=wx.DEFAULT_DIALOG_STYLE)
+        wx.SingleChoiceDialog.__init__(self, parent, message=wx.EmptyString, caption="122", choices=["12", "23", "34", ])
 
-        ag_fname = "C:\\bob2.gif"
+        self.SetSizeHintsSz(wx.DefaultSize, wx.DefaultSize)
 
-        ag = wx.AnimationCtrl(self, -1, ag_fname)
+        self.Centre(wx.BOTH)
 
-        ag.GetPlayer().UseBackgroundColour(True)
-
-        ag.Play()
+    def __del__(self):
+        pass
 
 
 class MyFrame1(wx.Frame):
     def search(self, evt):
         value = self.m_textCtrl8.GetValue()
         self.treeify_recursive("/", self.root_node, self.m_treeCtrl7)
+        dialog_ = MyDialog1(self)
+        dialog_.ShowModal()
 
     def treeify_recursive(self, path, parent, tree):
         client = self._zk_client
@@ -49,12 +52,54 @@ class MyFrame1(wx.Frame):
                 else:
                     tree.AppendItem(parent, c, 1)
 
+    def load_data(self):
+        print("load data")
+        pass
+
+    def get_current_path(self, item):
+        tree = self.m_treeCtrl7
+        current_item_text = tree.GetItemText(item)
+        pid = tree.GetItemParent(item)
+        if pid.ID is None:
+            return '/'
+        else:
+            return self.get_current_path(pid) + current_item_text + "/"
+
+    def copy_path(self, item):
+        path = self.get_current_path(item)
+
+        text_obj = wx.TextDataObject()
+        text_obj.SetText(path)
+        if wx.TheClipboard.IsOpened() or wx.TheClipboard.Open():
+            wx.TheClipboard.SetData(text_obj)
+            wx.TheClipboard.Close()
+
+    def copy_name(self, item):
+        name = self.m_treeCtrl7.GetItemText(item)
+        # name = urllib.parse.unquote(name)
+        text_obj = wx.TextDataObject()
+        text_obj.SetText(name)
+        if wx.TheClipboard.IsOpened() or wx.TheClipboard.Open():
+            wx.TheClipboard.SetData(text_obj)
+            wx.TheClipboard.Close()
+
+    def TreeCtlOnContextMenu(self, event):
+        tree_item = event.GetItem()
+        selected = self.GetPopupMenuSelectionFromUser(self.m_menu21, wx.DefaultPosition)
+        if selected is None:
+            return
+        selected_item = self.m_menu21.FindItemById(selected)
+        if selected_item is None:
+            return
+        selected_item.handler(tree_item)
+
     def __init__(self, parent):
 
-        self._zk_client = KazooClient("localhost:2181")
+        # self._zk_client = KazooClient("localhost:2181")
+        self._zk_client = KazooClient(hosts='10.128.62.34:2181,10.128.62.34:2182,10.128.62.34:2183')
         self._zk_client.start()
-        wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=wx.EmptyString, pos=wx.DefaultPosition, size=wx.Size(1029, 722), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
 
+        wx.Frame.__init__(self, parent, id=wx.ID_ANY, title=wx.EmptyString, pos=wx.DefaultPosition, size=wx.Size(1029, 722), style=wx.DEFAULT_FRAME_STYLE | wx.TAB_TRAVERSAL)
         self.SetSizeHintsSz(wx.DefaultSize, wx.DefaultSize)
 
         bSizer4 = wx.BoxSizer(wx.VERTICAL)
@@ -92,10 +137,30 @@ class MyFrame1(wx.Frame):
 
         bSizer20 = wx.BoxSizer(wx.HORIZONTAL)
 
-        self.m_treeCtrl7 = wx.TreeCtrl(self.m_panel8, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, 0)
+        self.m_treeCtrl7 = wx.TreeCtrl(self.m_panel8, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, style=wx.TR_DEFAULT_STYLE)
         bSizer20.Add(self.m_treeCtrl7, 1, wx.ALL | wx.EXPAND, 5)
 
-        self.root_node = self.m_treeCtrl7.AddRoot("/")
+        self.root_node = self.m_treeCtrl7.AddRoot("/", 0)
+
+        imglist = wx.ImageList(16, 16, True, 2)
+        imglist.Add(wx.ArtProvider.GetBitmap(wx.ART_FOLDER, size=wx.Size(16, 16)))
+        imglist.Add(wx.ArtProvider.GetBitmap(wx.ART_NORMAL_FILE, size=wx.Size(16, 16)))
+
+        self.m_treeCtrl7.AssignImageList(imglist)
+
+        self.m_treeCtrl7.Bind(wx.EVT_TREE_ITEM_MENU, self.TreeCtlOnContextMenu)
+
+        self.m_menu21 = wx.Menu()
+        self.m_menu21_m_menuItem1 = wx.MenuItem(self.m_menu21, wx.ID_ANY, u"copy path", wx.EmptyString, wx.ITEM_NORMAL)
+        self.m_menu21_m_menuItem1.handler = self.copy_path
+        self.m_menu21.Append(self.m_menu21_m_menuItem1)
+
+        self.m_menu21_m_menuItem2 = wx.MenuItem(self.m_menu21, wx.ID_ANY, u"copy name", wx.EmptyString, wx.ITEM_NORMAL)
+        self.m_menu21_m_menuItem2.handler = self.copy_name
+        self.m_menu21.Append(self.m_menu21_m_menuItem2)
+
+        self.m_menu21_m_menuItem3 = wx.MenuItem(self.m_menu21, wx.ID_ANY, u"refresh", wx.EmptyString, wx.ITEM_NORMAL)
+        self.m_menu21.Append(self.m_menu21_m_menuItem3)
 
         self.m_panel8.SetSizer(bSizer20)
         self.m_panel8.Layout()
