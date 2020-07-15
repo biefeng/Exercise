@@ -2,65 +2,34 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/tkinter_exercise/win_multi2.py" line="7" />
-    <bookmark url="file://$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py" line="148" />
+    <bookmark url="file://$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py" line="149" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4bbbb18d-33ff-43ee-961c-ec157f4ef7ec" name="Default Changelist" comment="common commit">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/baidu_obs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/fetch_chrome_plugin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/fetch_csdn_articles.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spider/tmp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkinter_exercise/VerticalScrollFrame.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkinter_exercise/appjar/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkinter_exercise/tree/tree.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tkinter_exercise/treeview_event_bind.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/dll_detect.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/zk_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/zk_util_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wx_python/test.py" afterDir="false" />
+    <list default="true" id="4bbbb18d-33ff-43ee-961c-ec157f4ef7ec" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/algorithm/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/b_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/binary_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/bplus_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/btree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/red_black_tree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm/sort.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/_uniout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/generate_mysql_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/generate_mysql_data_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/uniout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/zookeeper_util.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Exercise.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/export/MysqlDataExport.py" beforeDir="false" afterPath="$PROJECT_DIR$/export/MysqlDataExport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/analysisSaleDetailData.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/analysisSaleDetailData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spider/catchSaleDetail.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/catchSaleDetail.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Exercise$MysqlDataExport.coverage" NAME="MysqlDataExport Coverage Results" MODIFIED="1592724408410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/export" />
-    <SUITE FILE_PATH="coverage/Exercise$algorithm.coverage" NAME="algorithm Coverage Results" MODIFIED="1564316221311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Exercise$tab_frame.coverage" NAME="tab_frame Coverage Results" MODIFIED="1594366427917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$file_dialog.coverage" NAME="file_dialog Coverage Results" MODIFIED="1564036991820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$MysqlDataSync.coverage" NAME="MysqlDataSync Coverage Results" MODIFIED="1564732861923" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/export" />
-    <SUITE FILE_PATH="coverage/Exercise$tasklist_test.coverage" NAME="tasklist_test Coverage Results" MODIFIED="1564029160125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$comparison_sort.coverage" NAME="comparison_sort Coverage Results" MODIFIED="1569484721413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alogrithm" />
-    <SUITE FILE_PATH="coverage/Exercise$catch_zhuxian.coverage" NAME="catch_zhuxian Coverage Results" MODIFIED="1575447494884" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$zk_util_1.coverage" NAME="zk_util_1 Coverage Results" MODIFIED="1594708432724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/Exercise$fetch_csdn_articles.coverage" NAME="fetch_csdn_articles Coverage Results" MODIFIED="1591866820725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$b_tree.coverage" NAME="b_tree Coverage Results" MODIFIED="1569396607355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alogrithm" />
-    <SUITE FILE_PATH="coverage/Exercise$buyUnitSync.coverage" NAME="buyUnitSync Coverage Results" MODIFIED="1574059055803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/export" />
-    <SUITE FILE_PATH="coverage/Exercise$catech_mingchaonaxieshi.coverage" NAME="catech_mingchaonaxieshi Coverage Results" MODIFIED="1565704632630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$test.coverage" NAME="test Coverage Results" MODIFIED="1594635357936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wx_python" />
-    <SUITE FILE_PATH="coverage/Exercise$treeview_select.coverage" NAME="treeview_select Coverage Results" MODIFIED="1564103348112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$VerticalScrollFrame.coverage" NAME="VerticalScrollFrame Coverage Results" MODIFIED="1594364949283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1575440991297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/program/python-3.6.5/Lib/site-packages/eyed3/mp3" />
-    <SUITE FILE_PATH="coverage/Exercise$id3.coverage" NAME="id3 Coverage Results" MODIFIED="1575444412441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/program/python-3.6.5/Lib/site-packages/mp3_tagger" />
-    <SUITE FILE_PATH="coverage/Exercise$tasklist.coverage" NAME="tasklist Coverage Results" MODIFIED="1564042880809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$catchSaleDetail.coverage" NAME="catchSaleDetail Coverage Results" MODIFIED="1588402850002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$analysisSaleDetailData.coverage" NAME="analysisSaleDetailData Coverage Results" MODIFIED="1593703465307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$zk_util.coverage" NAME="zk_util Coverage Results" MODIFIED="1594369063865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/Exercise$fetch_chrome_plugin.coverage" NAME="fetch_chrome_plugin Coverage Results" MODIFIED="1592222427531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$pytest_in_test__py.coverage" NAME="pytest in test_.py Coverage Results" MODIFIED="1564107454822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$fetch_order_detail.coverage" NAME="fetch_order_detail Coverage Results" MODIFIED="1576576235807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$midify_mp3_head.coverage" NAME="midify_mp3_head Coverage Results" MODIFIED="1575444790235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
-    <SUITE FILE_PATH="coverage/Exercise$xml_parser.coverage" NAME="xml_parser Coverage Results" MODIFIED="1571742553847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/recommend" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -79,78 +48,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wx_python/test.py">
+        <entry file="file://$PROJECT_DIR$/util/zookeeper_util.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="242">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
-                <element signature="e#316#325#0" expanded="true" />
+                <element signature="e#101#145#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Dialog.py">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/tab_frame.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="766" column="28" lean-forward="true" selection-start-line="766" selection-start-column="28" selection-end-line="766" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_adv/AnimationCtrl.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="748">
+              <caret line="35" column="45" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="45" />
               <folding>
-                <element signature="e#164#183#0" expanded="true" />
+                <element signature="e#93#107#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Bitmap.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_glcanvas.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_msw.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/siplib.py">
+        <entry file="file://D:/Program File/Python/Python36/Lib/tkinter/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="59928">
+              <caret line="2727" column="6" selection-start-line="2727" selection-start-column="6" selection-end-line="2727" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_xrc.py">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/entry.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/Program File/Python/Python36/Lib/tkinter/ttk.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25498">
+              <caret line="1160" column="8" selection-start-line="1160" selection-start-column="8" selection-end-line="1160" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4708">
+              <caret line="219" column="35" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
+              <folding>
+                <element signature="e#24#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/favicon.ico">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/file_dialog.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/filename.spec">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tkinter_exercise/frame.py">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -159,117 +137,111 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>faker</find>
-      <find>fake</find>
-      <find>new</find>
-      <find>准备CentOS安装源</find>
-      <find>&lt;ar</find>
-      <find>其他方法</find>
-      <find>牛客网</find>
-      <find>cursor</find>
+      <find>arial</find>
+      <find>arial 啊--------------------------------------------------------------】、h</find>
+      <find>load</find>
+      <find>增加数据</find>
+      <find>red</find>
+      <find>select_bu</find>
+      <find>logi</find>
+      <find>download</find>
+      <find>my_tk</find>
+      <find>self.canvas.itemconfigure</find>
+      <find>bg</find>
+      <find>Frame</find>
+      <find>grid</find>
+      <find>place</find>
+      <find>user_info_avatar.config(image=avatar)</find>
+      <find>.config(image=avatar)</find>
+      <find>mess</find>
+      <find>messagebox</find>
+      <find>下载出错</find>
+      <find>downloading</find>
       <find>insert</find>
-      <find>style</find>
-      <find>java.text.Format from D:\progr</find>
-      <find>java.text.Format from D:\pro</find>
-      <find>jfr.jar</find>
-      <find>jfxrt.jar</find>
-      <find>No such file or directory</find>
-      <find>AppContext$PostShutdownEventRunnabl</find>
-      <find>tqd</find>
-      <find>html</find>
-      <find>c</find>
-      <find>canvas</find>
-      <find>create_wi</find>
-      <find>winfo_width</find>
-      <find>MyFrame</find>
-      <find>ac</find>
-      <find>thread</find>
-      <find>act</find>
-      <find>delete</find>
-      <find>expan</find>
-      <find>treec</find>
-      <find>butt</find>
+      <find>oran</find>
+      <find>wheel</find>
+      <find>My_Tk</find>
+      <find>orator</find>
+      <find>DatabaseManager</find>
+      <find>(key\s?,\s*value)</find>
+      <find>pack</find>
+      <find>anc</find>
+      <find>TK</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tkinter_exercise/radio_button.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/test_.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/tasklist_test.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/main_test.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/download_history.csv" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/treeview_select.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/tab_frame.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/tasklist.py" />
-        <option value="$PROJECT_DIR$/algorithm.py" />
-        <option value="$PROJECT_DIR$/export/MysqlDataSync.py" />
-        <option value="$PROJECT_DIR$/spider/catech_mingchaonaxieshi.py" />
-        <option value="$PROJECT_DIR$/util/regularExp.py" />
-        <option value="$PROJECT_DIR$/spider/handleJson.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/desktool/2.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/desktool/3.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/desktool/1.py" />
-        <option value="$PROJECT_DIR$/alogrithm/b_plus_tree.py" />
-        <option value="$PROJECT_DIR$/alogrithm/b_tree_github.py" />
-        <option value="$PROJECT_DIR$/alogrithm/comparison_sort.py" />
-        <option value="$PROJECT_DIR$/alogrithm/bucket.py" />
-        <option value="$PROJECT_DIR$/alogrithm/bucket_sort.py" />
-        <option value="$PROJECT_DIR$/alogrithm/b_tree.py" />
-        <option value="$PROJECT_DIR$/export/convert_xml_content.py" />
-        <option value="$PROJECT_DIR$/recommend/recm.py" />
-        <option value="$PROJECT_DIR$/recommend/item_cf_algorithm.py" />
-        <option value="$PROJECT_DIR$/recommend/xml_parser.py" />
-        <option value="$USER_HOME$/Documents/WeChat Files/BieFeNg6/FileStorage/File/2019-10/generate_mysql_data.py" />
-        <option value="$PROJECT_DIR$/export/buyUnitSync.py" />
-        <option value="$PROJECT_DIR$/export/generate_mysql_data.py" />
-        <option value="$PROJECT_DIR$/util/map_prop_editor.py" />
-        <option value="$PROJECT_DIR$/util/midify_mp3_head.py" />
-        <option value="$PROJECT_DIR$/spider/catch_zhuxian.py" />
-        <option value="$PROJECT_DIR$/spider/fetch_order_detail.py" />
-        <option value="$PROJECT_DIR$/spider/fetch_csdn_articls.py" />
-        <option value="$PROJECT_DIR$/spider/tmp.html" />
-        <option value="$PROJECT_DIR$/spider/SpiderGui.py" />
-        <option value="$PROJECT_DIR$/spider/CsdnBlogSpider.py" />
+        <option value="$PROJECT_DIR$/spider/sale_detail.csv" />
         <option value="$PROJECT_DIR$/spider/catchSaleDetail.py" />
+        <option value="$PROJECT_DIR$/spider/list_box_4.py" />
+        <option value="$PROJECT_DIR$/tkinter/table.py" />
+        <option value="$PROJECT_DIR$/_tkinter/table.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/table.py" />
+        <option value="$PROJECT_DIR$/spider/TkinterDemo.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/menu_top.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/entry.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/table_layout.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/TkinterDemo.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/tkutils.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/win_ai.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/win_multi.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/win_single.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/win_multi2.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/main.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/frame.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/tk_image.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/images/test_search_source.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/test_search_source.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/search_source.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/right_click_menu.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/tree_view_head.py" />
+        <option value="$APPLICATION_CONFIG_DIR$/idea.properties" />
         <option value="$PROJECT_DIR$/spider/analysisSaleDetailData.py" />
-        <option value="$PROJECT_DIR$/spider/fetch_csdn_articles.py" />
-        <option value="$PROJECT_DIR$/spider/fetch_chrome_plugin.py" />
-        <option value="$PROJECT_DIR$/util/dll_detect.py" />
-        <option value="$PROJECT_DIR$/export/MysqlDataExport.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/tree/tree.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/treeview_event_bind.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/chess_panel.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/process_bar.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/scroll_frame.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/tab_frame.py" />
         <option value="$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/appjar/__init__.py" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/VerticalScrollFrame.py" />
-        <option value="$PROJECT_DIR$/util/zk_util.py" />
-        <option value="$PROJECT_DIR$/util/zk_util_1.py" />
-        <option value="$PROJECT_DIR$/wx_python/test.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/tasklist.py" />
+        <option value="$PROJECT_DIR$/tkinter_exercise/treeview_select.py" />
+        <option value="$PROJECT_DIR$/algorithm.py" />
+        <option value="$PROJECT_DIR$/algorithm/main.py" />
+        <option value="$PROJECT_DIR$/algorithm/sort.py" />
+        <option value="$PROJECT_DIR$/data/_uniout.py" />
+        <option value="$PROJECT_DIR$/data/generate_mysql_data_1.py" />
+        <option value="$PROJECT_DIR$/algorithm/b_tree.py" />
+        <option value="$PROJECT_DIR$/algorithm/BTree.py" />
+        <option value="$PROJECT_DIR$/algorithm/red_black_tree.py" />
+        <option value="$PROJECT_DIR$/algorithm/bplus_tree.py" />
+        <option value="$PROJECT_DIR$/algorithm/binary_search.py" />
+        <option value="$PROJECT_DIR$/algorithm/btree.py" />
+        <option value="$PROJECT_DIR$/data/generate_mysql_data.py" />
+        <option value="$PROJECT_DIR$/util/zookeeper_util.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="y" value="2" />
-    <option name="width" value="1872" />
-    <option name="height" value="1085" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="260" />
+    <option name="y" value="25" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -280,13 +252,25 @@
             <path>
               <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="export" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
               <item name="tkinter_exercise" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exercise" type="462c0819:PsiDirectoryNode" />
               <item name="tkinter_exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="appjar" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="tkinter_exercise" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="tab_frame" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
@@ -295,78 +279,19 @@
             </path>
             <path>
               <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="wx_python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="-2030891570" type="70582d5e:PySkeletonsNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="-2030891570" type="70582d5e:PySkeletonsNode" />
-              <item name="wx" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="exercise" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="tkinter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.6 (Exercise) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="Lib" type="462c0819:PsiDirectoryNode" />
-              <item name="tkinter" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../CaliforniaPublicSalaries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../git_work/moviegeek" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -379,15 +304,12 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\workspace\pycharm\Exercise\tkinter_exercise" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\workspace\pycharm\Exercise\util" />
-      <recent name="E:\workspace\pycharm\Exercise\spider" />
-      <recent name="E:\workspace\pycharm\Exercise\export" />
-      <recent name="E:\workspace\pycharm\Exercise\tkinter_exercise\desktool" />
-      <recent name="E:\workspace\pycharm\Exercise\tkinter_exercise" />
+      <recent name="H:\workspace\pycharm\Exercise\data" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\workspace\pycharm\Exercise\algorithm" />
+      <recent name="H:\workspace\pycharm\Exercise\tkinter_exercise" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -402,29 +324,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="VerticalScrollFrame" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tkinter_exercise" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tkinter_exercise/VerticalScrollFrame.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.zookeeper_util">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -463,6 +363,72 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/analysisSaleDetailData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="binary_search" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/binary_search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_mysql_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/generate_mysql_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/algorithm" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/algorithm/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -513,26 +479,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wx_python" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wx_python/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="zk_util" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="zookeeper_util" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -545,26 +492,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/zk_util.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="zk_util_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/zk_util_1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/zookeeper_util.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -576,19 +504,19 @@
     <list>
       <item itemvalue="Python.analysisSaleDetailData" />
       <item itemvalue="Python.pyplot" />
+      <item itemvalue="Python.binary_search" />
+      <item itemvalue="Python.generate_mysql_data" />
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.tab_frame" />
-      <item itemvalue="Python.zk_util" />
-      <item itemvalue="Python.VerticalScrollFrame" />
-      <item itemvalue="Python.test" />
-      <item itemvalue="Python.zk_util_1" />
+      <item itemvalue="Python.zookeeper_util" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.zk_util_1" />
-        <item itemvalue="Python.VerticalScrollFrame" />
-        <item itemvalue="Python.zk_util" />
+        <item itemvalue="Python.zookeeper_util" />
+        <item itemvalue="Python.generate_mysql_data" />
+        <item itemvalue="Python.binary_search" />
         <item itemvalue="Python.tab_frame" />
+        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -610,79 +538,25 @@
       <workItem from="1563721876245" duration="583000" />
       <workItem from="1563722471290" duration="126000" />
       <workItem from="1563722849146" duration="35028000" />
-      <workItem from="1563980982851" duration="14287000" />
-      <workItem from="1564021086171" duration="9474000" />
-      <workItem from="1564034461037" duration="39455000" />
-      <workItem from="1564120465067" duration="3018000" />
-      <workItem from="1564211176917" duration="3189000" />
-      <workItem from="1564312617023" duration="13540000" />
-      <workItem from="1564730862013" duration="3473000" />
-      <workItem from="1564967184490" duration="1248000" />
-      <workItem from="1565059471451" duration="7366000" />
-      <workItem from="1565698082894" duration="11246000" />
-      <workItem from="1565749880281" duration="3199000" />
-      <workItem from="1567402423429" duration="5393000" />
-      <workItem from="1567761534141" duration="193000" />
-      <workItem from="1568708494532" duration="6021000" />
-      <workItem from="1569210495884" duration="10132000" />
-      <workItem from="1569291683333" duration="12113000" />
-      <workItem from="1569391914990" duration="17879000" />
-      <workItem from="1569553987672" duration="939000" />
-      <workItem from="1571291507270" duration="170000" />
-      <workItem from="1571291694796" duration="5978000" />
-      <workItem from="1571722036963" duration="12371000" />
-      <workItem from="1572319092170" duration="1881000" />
-      <workItem from="1572321084787" duration="176000" />
-      <workItem from="1572321277868" duration="258000" />
-      <workItem from="1572321554179" duration="13238000" />
-      <workItem from="1573128351776" duration="2880000" />
-      <workItem from="1574058170743" duration="1497000" />
-      <workItem from="1574411451024" duration="2728000" />
-      <workItem from="1574689539866" duration="5700000" />
-      <workItem from="1575431109963" duration="18297000" />
-      <workItem from="1575695814381" duration="642000" />
-      <workItem from="1575869242291" duration="539000" />
-      <workItem from="1576201021191" duration="57000" />
-      <workItem from="1576216857199" duration="5445000" />
-      <workItem from="1576478555275" duration="33952000" />
-      <workItem from="1576718033982" duration="7079000" />
-      <workItem from="1577196350189" duration="3850000" />
-      <workItem from="1578293372863" duration="2972000" />
-      <workItem from="1578555959526" duration="585000" />
-      <workItem from="1579106700847" duration="606000" />
-      <workItem from="1579226258756" duration="1194000" />
-      <workItem from="1579317727439" duration="592000" />
-      <workItem from="1579355734949" duration="594000" />
-      <workItem from="1579425995742" duration="155000" />
-      <workItem from="1579513029715" duration="598000" />
-      <workItem from="1580539322736" duration="23978000" />
-      <workItem from="1580964495723" duration="344000" />
-      <workItem from="1582615843712" duration="644000" />
-      <workItem from="1588145864768" duration="310000" />
-      <workItem from="1588310672837" duration="14506000" />
-      <workItem from="1588730747108" duration="593000" />
-      <workItem from="1590509710733" duration="7667000" />
-      <workItem from="1591082375879" duration="631000" />
-      <workItem from="1591259900082" duration="236000" />
-      <workItem from="1591540270086" duration="15446000" />
-      <workItem from="1591779840582" duration="1191000" />
-      <workItem from="1591863355703" duration="2796000" />
-      <workItem from="1592037660349" duration="14028000" />
-      <workItem from="1592144349471" duration="38573000" />
-      <workItem from="1592391654696" duration="3101000" />
-      <workItem from="1592632142012" duration="773000" />
-      <workItem from="1592636042663" duration="598000" />
-      <workItem from="1592651216967" duration="5471000" />
-      <workItem from="1592740834305" duration="768000" />
-      <workItem from="1592745757392" duration="1225000" />
-      <workItem from="1592758274505" duration="1262000" />
-      <workItem from="1592978612726" duration="2167000" />
-      <workItem from="1593395881920" duration="112000" />
-      <workItem from="1593703449494" duration="2795000" />
-      <workItem from="1593742003631" duration="7973000" />
-      <workItem from="1594294533256" duration="29396000" />
-      <workItem from="1594603049548" duration="12611000" />
-      <workItem from="1594689505674" duration="16161000" />
+      <workItem from="1563980982851" duration="15423000" />
+      <workItem from="1564068756729" duration="2390000" />
+      <workItem from="1564326330150" duration="9460000" />
+      <workItem from="1564677433288" duration="1606000" />
+      <workItem from="1567701346208" duration="6296000" />
+      <workItem from="1569161052468" duration="12363000" />
+      <workItem from="1571153279850" duration="1308000" />
+      <workItem from="1572287203462" duration="732000" />
+      <workItem from="1572454503533" duration="2684000" />
+      <workItem from="1573407138297" duration="2630000" />
+      <workItem from="1575628051644" duration="942000" />
+      <workItem from="1575890354504" duration="3027000" />
+      <workItem from="1576516196966" duration="932000" />
+      <workItem from="1576584828598" duration="1013000" />
+      <workItem from="1576752292999" duration="989000" />
+      <workItem from="1594312254108" duration="1760000" />
+      <workItem from="1594315984929" duration="4281000" />
+      <workItem from="1594574554756" duration="167000" />
+      <workItem from="1594574742840" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="视频下载">
       <created>1563209458784</created>
@@ -719,45 +593,20 @@
       <option name="project" value="LOCAL" />
       <updated>1563842213391</updated>
     </task>
-    <task id="LOCAL-00006" summary="任务列表">
-      <created>1564063570518</created>
+    <task id="LOCAL-00006" summary="完成基本视频下载">
+      <created>1563995380993</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1564063570518</updated>
+      <updated>1563995380993</updated>
     </task>
-    <task id="LOCAL-00007" summary="完成视频下载全部功能">
-      <created>1564123408113</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1564123408113</updated>
-    </task>
-    <task id="LOCAL-00008" summary="2019-07-28">
-      <created>1564326238648</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1564326238648</updated>
-    </task>
-    <task id="LOCAL-00009" summary="完成视频下载全部功能">
-      <created>1569210716841</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1569210716841</updated>
-    </task>
-    <task id="LOCAL-00010" summary="common commit">
-      <created>1576660499464</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1576660499464</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="pytest_in_test_search_source_py - 2019.07.14 at 17h 44m 49s.xml">
+      <configuration name="pytest in test_search_source.py" configurationId="tests" />
+    </history-entry>
     <history-entry file="pytest_in_test_search_source_py - 2019.07.14 at 17h 45m 18s.xml">
       <configuration name="pytest in test_search_source.py" configurationId="tests" />
     </history-entry>
@@ -773,648 +622,564 @@
     <history-entry file="pytest_in_test_search_source_py - 2019.07.14 at 17h 50m 04s.xml">
       <configuration name="pytest in test_search_source.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_in_test__py - 2019.07.26 at 10h 15m 33s.xml">
-      <configuration name="pytest in test_.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test__py - 2019.07.26 at 10h 16m 40s.xml">
-      <configuration name="pytest in test_.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test__py - 2019.07.26 at 10h 17m 02s.xml">
-      <configuration name="pytest in test_.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test__py - 2019.07.26 at 10h 17m 19s.xml">
-      <configuration name="pytest in test_.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test__py - 2019.07.26 at 10h 17m 35s.xml">
-      <configuration name="pytest in test_.py" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="687466000" />
+    <option name="totallyTimeSpent" value="263926000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.70947033" visible="true" weight="0.2783903" />
-      <window_info id="Structure" order="1" sideWeight="0.2905297" side_tool="true" weight="0.23980154" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32744282" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32744282" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" weight="0.35239086" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32952183" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.2939424" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32902583" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49573562" weight="0.2900208" />
-      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4989339" visible="true" weight="0.3004158" />
-      <window_info anchor="bottom" id="Messages" order="14" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="62" y="23" width="1858" height="1057" id="SciView" maximized="true" order="3" type="WINDOWED" weight="0.34161147" />
-      <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="4" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3294702" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4982639" visible="true" weight="0.19829424" />
-      <window_info id="Structure" order="1" sideWeight="0.5017361" side_tool="true" weight="0.25551876" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6550696" visible="true" weight="0.23347548" />
+      <window_info id="Structure" order="1" sideWeight="0.3449304" side_tool="true" visible="true" weight="0.23347548" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902583" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32902583" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.43793446" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43836978" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32902583" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.32902583" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32902583" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.3286991" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="13" visible="true" weight="0.28103277" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.32902583" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.49946696" weight="0.34890655" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" x="682" y="218" width="619" height="643" id="SciView" maximized="true" order="3" type="WINDOWED" weight="0.34161147" />
-      <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="4" side_tool="true" weight="0.32995737" />
-      <window_info anchor="right" id="Database" order="5" weight="0.3294702" />
-    </layout-to-restore>
+      <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="4" sideWeight="0.50076336" side_tool="true" visible="true" weight="0.32942432" />
+      <window_info anchor="right" id="Database" order="5" sideWeight="0.49923664" weight="0.32942432" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.History.Properties">
-    <option name="COLUMN_ORDER">
-      <list>
-        <option value="0" />
-        <option value="2" />
-        <option value="3" />
-        <option value="1" />
-      </list>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="视频下载" />
     <MESSAGE value="完成基本视频下载" />
-    <MESSAGE value="任务列表" />
-    <MESSAGE value="2019-07-28" />
-    <MESSAGE value="完成视频下载全部功能" />
-    <MESSAGE value="common commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="common commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成基本视频下载" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/algorithm.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="76" />
+          <url>file://D:/Program File/Python/Python36/Lib/tkinter/__init__.py</url>
+          <line>1932</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tkinter_exercise/tk_image.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tkinter_exercise/search_source.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tkinter_exercise/treeview_select.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/export/MysqlDataSync.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/export/MysqlDataExport.py</url>
-          <line>185</line>
-          <option name="timeStamp" value="80" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/catech_mingchaonaxieshi.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/catech_mingchaonaxieshi.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/catech_mingchaonaxieshi.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/catech_mingchaonaxieshi.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/catchSaleDetail.py</url>
-          <line>21</line>
-          <option name="timeStamp" value="88" />
+          <line>339</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/spider/analysisSaleDetailData.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="89" />
+          <line>20</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://D:/program/python-3.6.5/Lib/site-packages/mp3_tagger/id3.py</url>
-          <line>154</line>
-          <option name="timeStamp" value="96" />
+          <url>file://$PROJECT_DIR$/tkinter_exercise/tasklist.py</url>
+          <line>85</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/export/MysqlDataExport.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="97" />
+          <url>file://$PROJECT_DIR$/algorithm/sort.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/export/MysqlDataExport.py</url>
-          <line>96</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/fetch_order_detail.py</url>
-          <line>104</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/fetch_order_detail.py</url>
-          <line>101</line>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/spider/catchSaleDetail.py</url>
-          <line>13</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <condition expression="name == 'ImTranslator'" language="Python" />
-          <url>file://$PROJECT_DIR$/spider/fetch_chrome_plugin.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/export/MysqlDataExport.py</url>
-          <line>226</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tkinter_exercise/treeview_select.py</url>
-          <line>292</line>
-          <option name="timeStamp" value="124" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tkinter_exercise/treeview_select.py</url>
-          <line>276</line>
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tkinter_exercise/VerticalScrollFrame.py</url>
-          <line>10</line>
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/util/zk_util.py</url>
-          <line>66</line>
-          <option name="timeStamp" value="136" />
+          <url>file://$PROJECT_DIR$/algorithm/sort.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog>
-          <selected-grouping-rules>
-            <grouping-rule id="by-file" />
-          </selected-grouping-rules>
-        </breakpoints-dialog>
-      </breakpoints-dialog>
-      <default-breakpoints>
-        <breakpoint type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
-          </properties>
-        </breakpoint>
-      </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="rec" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Exercise$pytest_in_test_search_source_py.coverage" NAME="pytest in test_search_source.py Coverage Results" MODIFIED="1563097804054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise/images" />
     <SUITE FILE_PATH="coverage/Exercise$tasklist.coverage" NAME="tasklist Coverage Results" MODIFIED="1563994716150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
-    <SUITE FILE_PATH="coverage/Exercise$tab_frame.coverage" NAME="tab_frame Coverage Results" MODIFIED="1563995285184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
+    <SUITE FILE_PATH="coverage/Exercise$tab_frame.coverage" NAME="tab_frame Coverage Results" MODIFIED="1564072234324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
     <SUITE FILE_PATH="coverage/Exercise$DownLoaUtil.coverage" NAME="DownLoaUtil Coverage Results" MODIFIED="1563984384918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
     <SUITE FILE_PATH="coverage/Exercise$catchSaleDetail.coverage" NAME="catchSaleDetail Coverage Results" MODIFIED="1562763722692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/Exercise$treeview_select.coverage" NAME="treeview_select Coverage Results" MODIFIED="1563128422239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
+    <SUITE FILE_PATH="coverage/Exercise$binary_search.coverage" NAME="binary_search Coverage Results" MODIFIED="1569173583095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/Exercise$tk_image.coverage" NAME="tk_image Coverage Results" MODIFIED="1563040591847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
+    <SUITE FILE_PATH="coverage/Exercise$main.coverage" NAME="main Coverage Results" MODIFIED="1564335792673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/algorithm" />
     <SUITE FILE_PATH="coverage/Exercise$analysisSaleDetailData.coverage" NAME="analysisSaleDetailData Coverage Results" MODIFIED="1563725583487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
   </component>
   <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
+    <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>name == 'ImTranslator'</expression-string>
+        <expression-string>r[right] &gt;= key and right &gt; left:
+                right = right - 1
+            else:
+                arr[left] = arr[right]
+            while arr[left] &lt; key and right &gt; left:
+                left = left + 1
+            else:
+                arr[right] = arr[left]
+            arr[right] = arr[left]
+        arr[left] = key
+        self.sort(arr, start, left)
+        self.sort(arr, left + 1, end)
+class merge_sort:
+    pass
+    def merge(self, arr, p):
+        group = (\/.</expression-string>
         <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>(0 if cl &gt; 0 else 1)</expression-string>
+        <expression-string>arr[4]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pid</expression-string>
+        <expression-string>ceil((hi + lo) / 2)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>item.ID</expression-string>
+        <expression-string>1&lt;&lt;(p-1)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>item</expression-string>
+        <expression-string>tmp[start_2]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.Item</expression-string>
+        <expression-string>tmp[]start_2</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>self.tree.FindFocus()</expression-string>
+        <expression-string>len(arr) + 1 - (1 &lt;&lt; p)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event.item</expression-string>
+        <expression-string>(len(arr) + 1) / (1 &lt;&lt; p)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>event</expression-string>
+        <expression-string>(len(arr)+1-1)&lt;&lt;1</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>tree.AppendItem(root, 'item 2', 0)</expression-string>
+        <expression-string>(len(arr)+1-1)&lt;&lt;2</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(arr)+1-1</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/export/MysqlDataSync.py">
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/images/avatar.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/images/avatar.ppm">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://D:/Program File/Python/Python36/Lib/http/cookiejar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="69" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="69" />
+        <state relative-caret-position="-594" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Program File/Python/Python36/Lib/site-packages/requests/cookies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-763">
+          <caret line="172" column="14" lean-forward="true" selection-start-line="172" selection-start-column="14" selection-end-line="172" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/export/generate_mysql_data.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/_jb_pytest_runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/right_click_menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tk_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
-            <element signature="e#61#86#0" expanded="true" />
+            <element signature="e#46#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/analysisSaleDetailData.py">
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/avatar.ppm">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/-1812295141/_tkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="e#46#81#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="206">
+          <caret line="127" column="8" selection-start-line="127" selection-start-column="8" selection-end-line="127" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/CsdnBlogSpider.py">
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/menu_top.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-          <folding>
-            <element signature="e#37#46#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/python-3.6.5/Lib/csv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1656">
-          <caret line="81" column="8" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export/convert_xml_content.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#1#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spider/catchSaleDetail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="27" column="78" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export/buyUnitSync.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/export/table_sync.py">
+    <entry file="file://D:/Program File/Python/Python36/Lib/tkinter/messagebox.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/spider/fetch_csdn_articles.py">
+    <entry file="file://D:/Program File/Python/Python36/Lib/site-packages/matplotlib/dates.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="23" selection-start-line="23" selection-end-line="36" selection-end-column="30" />
+        <state relative-caret-position="32010">
+          <caret line="1475" column="27" selection-start-line="1475" selection-start-column="27" selection-end-line="1475" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/saveVedio.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/search_source.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#108#119#0" expanded="true" />
+            <element signature="e#40#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/sale_detail.csv" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/idea.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/chess_panel.py" />
+    <entry file="file://$PROJECT_DIR$/spider/analysisSaleDetailData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tkinter_exercise/tree_view_head.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tab_frame.spec">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/win_ai.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-621" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/win_multi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tkutils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/treeview_event_bind.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tree/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="e#93#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/appJar/appjar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="1790" column="8" selection-start-line="1790" selection-start-column="8" selection-end-line="1790" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/appjar/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="264">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tkinter_exercise/tasklist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        <state relative-caret-position="1760">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tab_frame.py">
+    <entry file="file://D:/Anaconda3/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="44" />
-          <folding>
-            <element signature="e#93#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/zk_util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2208">
-          <caret line="101" column="25" selection-start-line="101" selection-start-column="25" selection-end-line="101" selection-end-column="25" />
-          <folding>
-            <element signature="e#97#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/core.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901232">
-          <caret line="39184" column="8" selection-start-line="39184" selection-start-column="8" selection-end-line="39184" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/lib/pydocview.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42941">
-          <caret line="1879" column="20" selection-start-line="1879" selection-start-column="20" selection-end-line="1879" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/handlers/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50945">
-          <caret line="2219" column="8" selection-start-line="2219" selection-start-column="8" selection-end-line="2219" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39146">
-          <caret line="1705" column="6" selection-start-line="1705" selection-start-column="6" selection-end-line="1705" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/VerticalScrollFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4025">
-          <caret line="180" column="47" selection-start-line="180" selection-start-column="47" selection-end-line="180" selection-end-column="47" />
+        <state relative-caret-position="50534">
+          <caret line="2300" column="32" selection-start-line="2300" selection-start-column="32" selection-end-line="2300" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tkinter_exercise/treeview_select.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8050">
-          <caret line="358" column="8" selection-start-line="358" selection-start-column="8" selection-end-line="358" selection-end-column="82" />
+        <state relative-caret-position="2090">
+          <caret line="103" column="65" selection-start-line="103" selection-start-column="65" selection-end-line="103" selection-end-column="65" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/tkinter/ttk.py">
+    <entry file="file://$PROJECT_DIR$/algorithm/sort.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26496">
-          <caret line="1153" column="33" selection-start-line="1153" selection-start-column="33" selection-end-line="1153" selection-end-column="33" />
+        <state relative-caret-position="1540">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/client.py">
+    <entry file="file://$PROJECT_DIR$/algorithm/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="1045" lean-forward="true" selection-start-line="1045" selection-end-line="1045" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/recipe/cache.py">
+    <entry file="file://D:/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="189" column="8" selection-start-line="189" selection-start-column="8" selection-end-line="189" selection-end-column="8" />
+        <state relative-caret-position="7282">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/GridBagSizer.py">
+    <entry file="file://D:/Anaconda3/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/uniout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        <state relative-caret-position="132">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/BoxSizer.py">
+    <entry file="file://$PROJECT_DIR$/data/_uniout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Sizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/SplitterWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="317" column="8" selection-start-line="317" selection-start-column="8" selection-end-line="317" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/zk_util_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="58" />
+        <state relative-caret-position="2046">
+          <caret line="94" column="19" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="19" />
           <folding>
-            <element signature="e#99#108#0" expanded="true" />
+            <element signature="e#47#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_adv/AnimationCtrl.py">
+    <entry file="file://D:/Anaconda3/Lib/site-packages/dateutil/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="132">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/scroll_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/b_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="71" column="57" lean-forward="true" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
           <folding>
-            <element signature="e#164#183#0" expanded="true" />
+            <element signature="e#10356#10386#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Bitmap.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_xrc.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Dialog.py">
+    <entry file="file://$PROJECT_DIR$/data/generate_mysql_data_1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="766" column="28" lean-forward="true" selection-start-line="766" selection-start-column="28" selection-end-line="766" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_glcanvas.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_msw.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/siplib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="15" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wx_python/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="330">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#316#325#0" expanded="true" />
+            <element signature="e#46#60#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/btree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/generate_mysql_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/bplus_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program File/Python/Python27/Lib/bisect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/binary_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algorithm/red_black_tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/process_bar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding>
+            <element signature="e#46#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/error.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/zookeeper_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="e#101#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tab_frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="35" column="45" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="45" />
+          <folding>
+            <element signature="e#93#107#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program File/Python/Python36/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59928">
+          <caret line="2727" column="6" selection-start-line="2727" selection-start-column="6" selection-end-line="2727" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/entry.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/Program File/Python/Python36/Lib/tkinter/ttk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25498">
+          <caret line="1160" column="8" selection-start-line="1160" selection-start-column="8" selection-end-line="1160" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4708">
+          <caret line="219" column="35" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/file_dialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/filename.spec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tkinter_exercise/frame.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
