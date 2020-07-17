@@ -6,8 +6,6 @@
 from tkinter.ttk import Treeview, Menubutton
 from tkinter import Tk, LEFT, YES, Y
 
-
-
 __author__ = '33504'
 
 
