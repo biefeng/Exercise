@@ -198,15 +198,16 @@ class MyFrame1(wx.Frame):
 		client = self._zk_client
 
 		path = self.get_current_path(item)
-		if client:
-			client.delete(path, recursive=True)
 		parent = self.m_treeCtrl7.GetItemParent(item)
+		if client:
+			self.m_treeCtrl7.Collapse(parent)
+			client.delete(path, recursive=True)
+
 		parent_id = parent.ID
 		if parent_id is None:
 			self.search(None)
 		else:
 			parent_path = self.get_current_path(parent)
-			self.m_treeCtrl7.Collapse(parent)
 			self.m_treeCtrl7.DeleteChildren(parent)
 			self.treeify_recursive(parent_path, parent, self.m_treeCtrl7)
 			self.m_treeCtrl7.Expand(parent)
