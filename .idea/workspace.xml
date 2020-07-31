@@ -6,9 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4bbbb18d-33ff-43ee-961c-ec157f4ef7ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wx_python/static-text.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wx_python/text_clip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/loading.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/analysisSaleDetailData.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/analysisSaleDetailData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spider/catchSaleDetail.py" beforeDir="false" afterPath="$PROJECT_DIR$/spider/catchSaleDetail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wx_python/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/wx_python/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,14 +34,14 @@
     <SUITE FILE_PATH="coverage/Exercise$buyUnitSync.coverage" NAME="buyUnitSync Coverage Results" MODIFIED="1574059055803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/export" />
     <SUITE FILE_PATH="coverage/Exercise$popmenu.coverage" NAME="popmenu Coverage Results" MODIFIED="1594795120003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wx_python" />
     <SUITE FILE_PATH="coverage/Exercise$catech_mingchaonaxieshi.coverage" NAME="catech_mingchaonaxieshi Coverage Results" MODIFIED="1565704632630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$test.coverage" NAME="test Coverage Results" MODIFIED="1594808836323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wx_python" />
+    <SUITE FILE_PATH="coverage/Exercise$test.coverage" NAME="test Coverage Results" MODIFIED="1596184103179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wx_python" />
     <SUITE FILE_PATH="coverage/Exercise$treeview_select.coverage" NAME="treeview_select Coverage Results" MODIFIED="1564103348112" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
     <SUITE FILE_PATH="coverage/Exercise$VerticalScrollFrame.coverage" NAME="VerticalScrollFrame Coverage Results" MODIFIED="1594364949283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
     <SUITE FILE_PATH="coverage/Exercise$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1575440991297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/program/python-3.6.5/Lib/site-packages/eyed3/mp3" />
     <SUITE FILE_PATH="coverage/Exercise$id3.coverage" NAME="id3 Coverage Results" MODIFIED="1575444412441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/program/python-3.6.5/Lib/site-packages/mp3_tagger" />
     <SUITE FILE_PATH="coverage/Exercise$tasklist.coverage" NAME="tasklist Coverage Results" MODIFIED="1564042880809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
     <SUITE FILE_PATH="coverage/Exercise$catchSaleDetail.coverage" NAME="catchSaleDetail Coverage Results" MODIFIED="1588402850002" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
-    <SUITE FILE_PATH="coverage/Exercise$analysisSaleDetailData.coverage" NAME="analysisSaleDetailData Coverage Results" MODIFIED="1593703465307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
+    <SUITE FILE_PATH="coverage/Exercise$analysisSaleDetailData.coverage" NAME="analysisSaleDetailData Coverage Results" MODIFIED="1595309361092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/Exercise$zk_util.coverage" NAME="zk_util Coverage Results" MODIFIED="1594369063865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/Exercise$fetch_chrome_plugin.coverage" NAME="fetch_chrome_plugin Coverage Results" MODIFIED="1592222427531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spider" />
     <SUITE FILE_PATH="coverage/Exercise$pytest_in_test__py.coverage" NAME="pytest in test_.py Coverage Results" MODIFIED="1564107454822" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise" />
@@ -63,11 +65,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wx_python/clipboard.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wx_python/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="41" lean-forward="true" selection-start-line="36" selection-end-line="41" />
+            <state relative-caret-position="376">
+              <caret line="130" column="40" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
+              <folding>
+                <element signature="e#314#323#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,86 +80,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/core.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
+            <state relative-caret-position="194">
               <caret line="2223" selection-start-line="2223" selection-end-line="2223" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wx_python/test.py">
+        <entry file="file://$PROJECT_DIR$/spider/catchSaleDetail.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="345">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
               <folding>
-                <element signature="e#315#324#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wx_python/static-text.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="40" />
-              <folding>
-                <element signature="e#416#425#0" expanded="true" />
+                <element signature="e#0#10#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/lib/expando.py">
+        <entry file="file://$PROJECT_DIR$/spider/analysisSaleDetailData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
-              <caret line="120" column="6" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wx_python/text_clip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Window.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="571" column="8" selection-start-line="571" selection-start-column="8" selection-end-line="571" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/StaticText.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/security.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="1228" column="8" selection-start-line="1228" selection-start-column="8" selection-end-line="1228" selection-end-column="8" />
+            <state relative-caret-position="253">
+              <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+              <folding>
+                <element signature="e#46#81#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -171,20 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;ar</find>
-      <find>其他方法</find>
-      <find>牛客网</find>
-      <find>cursor</find>
-      <find>insert</find>
-      <find>style</find>
-      <find>java.text.Format from D:\progr</find>
-      <find>java.text.Format from D:\pro</find>
-      <find>jfr.jar</find>
-      <find>jfxrt.jar</find>
-      <find>No such file or directory</find>
-      <find>AppContext$PostShutdownEventRunnabl</find>
-      <find>tqd</find>
-      <find>html</find>
       <find>c</find>
       <find>canvas</find>
       <find>create_wi</find>
@@ -201,6 +138,20 @@
       <find>tree</find>
       <find>m_dataViewListCtrl1</find>
       <find>GETACL</find>
+      <find>CACHE</find>
+      <find>cac</find>
+      <find>conn_server</find>
+      <find>AnimationCtrl</find>
+      <find>gif</find>
+      <find>client.s</find>
+      <find>loading.</find>
+      <find>loading.gi</find>
+      <find>WX.EXPA</find>
+      <find>WX.ALL</find>
+      <find>ANIM</find>
+      <find>connect</find>
+      <find>search</find>
+      <find>do_sea</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tkinter_exercise/download_history.csv" />
-        <option value="$PROJECT_DIR$/tkinter_exercise/treeview_select.py" />
         <option value="$PROJECT_DIR$/tkinter_exercise/tab_frame.py" />
         <option value="$PROJECT_DIR$/tkinter_exercise/tasklist.py" />
         <option value="$PROJECT_DIR$/algorithm.py" />
@@ -243,8 +192,6 @@
         <option value="$PROJECT_DIR$/spider/tmp.html" />
         <option value="$PROJECT_DIR$/spider/SpiderGui.py" />
         <option value="$PROJECT_DIR$/spider/CsdnBlogSpider.py" />
-        <option value="$PROJECT_DIR$/spider/catchSaleDetail.py" />
-        <option value="$PROJECT_DIR$/spider/analysisSaleDetailData.py" />
         <option value="$PROJECT_DIR$/spider/fetch_csdn_articles.py" />
         <option value="$PROJECT_DIR$/spider/fetch_chrome_plugin.py" />
         <option value="$PROJECT_DIR$/util/dll_detect.py" />
@@ -258,23 +205,27 @@
         <option value="$PROJECT_DIR$/util/zk_util_1.py" />
         <option value="$PROJECT_DIR$/wx_python/clipboard.py" />
         <option value="$PROJECT_DIR$/wx_python/popmenu.py" />
-        <option value="$PROJECT_DIR$/wx_python/test.py" />
         <option value="$PROJECT_DIR$/wx_python/text_clip.py" />
         <option value="$PROJECT_DIR$/wx_python/static-text.py" />
+        <option value="$PROJECT_DIR$/wx_python/animation.py" />
+        <option value="$PROJECT_DIR$/wx_python/test.spec" />
+        <option value="$PROJECT_DIR$/spider/catchSaleDetail.py" />
+        <option value="$PROJECT_DIR$/spider/analysisSaleDetailData.py" />
+        <option value="$PROJECT_DIR$/wx_python/test.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="55" />
-    <option name="y" value="2" />
-    <option name="width" value="1872" />
-    <option name="height" value="1085" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="63" />
+    <option name="width" value="1857" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -285,18 +236,12 @@
             <path>
               <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exercise" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Exercise" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Exercise" type="462c0819:PsiDirectoryNode" />
               <item name="wx_python" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,10 +249,10 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/program/wxGlade-0.9.6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jy-gallery" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -317,15 +262,15 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\workspace\pycharm\Exercise\tkinter_exercise" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\pycharm\Exercise" />
+      <recent name="E:\workspace\pycharm\Exercise\wx_python" />
       <recent name="E:\workspace\pycharm\Exercise\util" />
       <recent name="E:\workspace\pycharm\Exercise\spider" />
       <recent name="E:\workspace\pycharm\Exercise\export" />
-      <recent name="E:\workspace\pycharm\Exercise\tkinter_exercise\desktool" />
-      <recent name="E:\workspace\pycharm\Exercise\tkinter_exercise" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\workspace\pycharm\Exercise\tkinter_exercise" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -340,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.static-text">
+  <component name="RunManager" selected="Python.test">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -385,7 +330,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="popmenu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="animation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -398,7 +343,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wx_python/popmenu.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wx_python/animation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="catchSaleDetail" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Exercise" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider/catchSaleDetail.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -433,6 +400,9 @@
       <module name="Exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wx_python" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -471,6 +441,9 @@
       <module name="Exercise" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/wx_python" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -486,44 +459,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="zk_util_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Exercise" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/zk_util_1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.analysisSaleDetailData" />
       <item itemvalue="Python.pyplot" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.zk_util_1" />
-      <item itemvalue="Python.popmenu" />
       <item itemvalue="Python.static-text" />
       <item itemvalue="Python.text_clip" />
+      <item itemvalue="Python.animation" />
+      <item itemvalue="Python.catchSaleDetail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.catchSaleDetail" />
+        <item itemvalue="Python.animation" />
         <item itemvalue="Python.static-text" />
         <item itemvalue="Python.text_clip" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.zk_util_1" />
       </list>
     </recent_temporary>
   </component>
@@ -617,7 +568,14 @@
       <workItem from="1593742003631" duration="7973000" />
       <workItem from="1594294533256" duration="29396000" />
       <workItem from="1594603049548" duration="12611000" />
-      <workItem from="1594689505674" duration="39702000" />
+      <workItem from="1594689505674" duration="40701000" />
+      <workItem from="1594887866195" duration="7961000" />
+      <workItem from="1594896752648" duration="11693000" />
+      <workItem from="1594977408984" duration="736000" />
+      <workItem from="1595207334652" duration="1229000" />
+      <workItem from="1595294286946" duration="3648000" />
+      <workItem from="1595812986640" duration="595000" />
+      <workItem from="1595944002449" duration="6333000" />
     </task>
     <task id="LOCAL-00001" summary="视频下载">
       <created>1563209458784</created>
@@ -717,7 +675,35 @@
       <option name="project" value="LOCAL" />
       <updated>1594809206947</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="common commit">
+      <created>1594814318062</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1594814318062</updated>
+    </task>
+    <task id="LOCAL-00016" summary="common commit">
+      <created>1594899002001</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1594899002003</updated>
+    </task>
+    <task id="LOCAL-00017" summary="common commit">
+      <created>1594899061087</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1594899061087</updated>
+    </task>
+    <task id="LOCAL-00018" summary="common commit">
+      <created>1594954879387</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1594954879387</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -753,19 +739,19 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="711007000" />
+    <option name="totallyTimeSpent" value="744201000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1874" height="1096" extended-state="6" />
+    <frame x="63" y="0" width="1857" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70947033" visible="true" weight="0.27783903" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70947033" visible="true" weight="0.30050084" />
       <window_info id="Structure" order="1" sideWeight="0.2905297" side_tool="true" weight="0.23980154" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32744282" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32744282" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" visible="true" weight="0.35239086" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.4978678" visible="true" weight="0.35200846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -775,7 +761,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.2939424" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="11" weight="0.32902583" />
       <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.49573562" weight="0.2900208" />
-      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4989339" weight="0.3004158" />
+      <window_info anchor="bottom" id="Python Console" order="13" sideWeight="0.4989339" weight="0.29598308" />
       <window_info anchor="bottom" id="Messages" order="14" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -798,6 +784,46 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="视频下载" />
     <MESSAGE value="完成基本视频下载" />
@@ -806,6 +832,7 @@
     <MESSAGE value="完成视频下载全部功能" />
     <MESSAGE value="common commit" />
     <option name="LAST_COMMIT_MESSAGE" value="common commit" />
+    <option name="PRESELECT_EXISTING_CHANGELIST" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -921,6 +948,11 @@
           <line>36</line>
           <option name="timeStamp" value="142" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wx_python/test.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog>
@@ -937,6 +969,11 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="event.GetInt()" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Exercise$pytest_in_test_search_source_py.coverage" NAME="pytest in test_search_source.py Coverage Results" MODIFIED="1563097804054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tkinter_exercise/images" />
@@ -958,6 +995,36 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>child.IsOk()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>cookie</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>child</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>child.Id</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>int(timeout * 1000)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>evt</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>self.GetCaret()</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -972,98 +1039,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>evt.skip()</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>acls[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>acls[0].acl_list</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>acls</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>client.get_acls(path)[0][0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>client.get_acls(path)[0]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tasklist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/tab_frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="122" column="4" selection-start-line="122" selection-start-column="4" selection-end-line="122" selection-end-column="44" />
-          <folding>
-            <element signature="e#93#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/core.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901232">
-          <caret line="39184" column="8" selection-start-line="39184" selection-start-column="8" selection-end-line="39184" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/lib/pydocview.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42941">
-          <caret line="1879" column="20" selection-start-line="1879" selection-start-column="20" selection-end-line="1879" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/handlers/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1449">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39146">
-          <caret line="1705" column="6" selection-start-line="1705" selection-start-column="6" selection-end-line="1705" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/VerticalScrollFrame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tkinter_exercise/DownLoaUtil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4025">
-          <caret line="180" column="47" selection-start-line="180" selection-start-column="47" selection-end-line="180" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tkinter_exercise/treeview_select.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8050">
@@ -1135,13 +1113,6 @@
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_xrc.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="766" column="28" lean-forward="true" selection-start-line="766" selection-start-column="28" selection-end-line="766" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1178,13 +1149,6 @@
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/ProgressDialog.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5382">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Dialog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
         </state>
       </provider>
@@ -1284,78 +1248,150 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/client.py">
+    <entry file="file://$PROJECT_DIR$/wx_python/static-text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="1228" column="8" selection-start-line="1228" selection-start-column="8" selection-end-line="1228" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/security.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/core.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="2223" selection-start-line="2223" selection-end-line="2223" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wx_python/clipboard.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="41" lean-forward="true" selection-start-line="36" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/StaticText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wx_python/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state relative-caret-position="1196">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
           <folding>
-            <element signature="e#315#324#0" expanded="true" />
+            <element signature="e#416#425#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Dialog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10603">
+          <caret line="464" column="8" selection-start-line="464" selection-start-column="8" selection-end-line="464" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/lib/expando.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2737">
+          <caret line="120" column="6" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wx_python/text_clip.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
-          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/Window.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
+        <state relative-caret-position="13064">
           <caret line="571" column="8" selection-start-line="571" selection-start-column="8" selection-end-line="571" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/lib/expando.py">
+    <entry file="file://$PROJECT_DIR$/wx_python/dist/test.exe">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/InputStream.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
-          <caret line="120" column="6" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
+        <state relative-caret-position="-2849">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wx_python/static-text.py">
+    <entry file="file://$PROJECT_DIR$/wx_python/test.spec">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="55" column="8" selection-start-line="55" selection-start-column="8" selection-end-line="55" selection-end-column="40" />
+        <state relative-caret-position="207">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/catchSaleDetail.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding>
-            <element signature="e#416#425#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/pkgutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13432">
+          <caret line="593" column="4" selection-start-line="593" selection-start-column="4" selection-end-line="593" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx_python/animation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="33" column="53" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx_python/clipboard.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="41" selection-start-line="36" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/-2030891570/wx/_core/StaticText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4715">
+          <caret line="208" column="8" selection-start-line="208" selection-start-column="8" selection-end-line="208" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/security.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4209">
+          <caret line="247" selection-start-line="247" selection-end-line="247" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/kazoo/protocol/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13616">
+          <caret line="637" column="46" selection-start-line="637" selection-start-column="46" selection-end-line="637" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider/analysisSaleDetailData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="e#46#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/program/Miniconda3/envs/exercise/Lib/site-packages/wx/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="2223" selection-start-line="2223" selection-end-line="2223" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx_python/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="130" column="40" selection-start-line="130" selection-start-column="40" selection-end-line="130" selection-end-column="40" />
+          <folding>
+            <element signature="e#314#323#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,10 +6,10 @@
 ##
 ## PLEASE DO "NOT" EDIT THIS FILE!
 ###########################################################################
-
-import threading
-
+import os
+import sys
 from concurrent.futures.thread import ThreadPoolExecutor
+
 import wx
 import wx.adv
 import wx.dataview
@@ -18,6 +18,17 @@ import wx.xrc
 ## Class MyFrame1
 ###########################################################################
 from kazoo.client import KazooClient
+
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 
 class MyDialog1(wx.Dialog):
@@ -102,18 +113,38 @@ class MyDialog1(wx.Dialog):
 
 class MyFrame1(wx.Frame):
     def search(self, evt):
+        value = self.m_textCtrl8.GetValue()
+        tree = self.m_treeCtrl7
+        selection = tree.GetSelection()
+        if selection is None:
+            return
+        self.recursive_search(selection,value)
+
+    def recursive_search(self, item, text):
+        tree = self.m_treeCtrl7
+        (child, cookie) = tree.GetFirstChild(item)
+        while child.IsOk():
+            self.recursive_search(child,text)
+            item_text = tree.GetItemText(child)
+            if item_text.find(text) > 0:
+                tree.Expand(child)
+            print(tree.GetItemText(child))
+            (child, cookie) = tree.GetNextChild(child, cookie)
+
+    def load(self, evt):
 
         if self._zk_client is None:
             self.messageDialog.SetMessage("please click the connect button and connect to zookeeper server.")
             self.messageDialog.ShowModal()
             return
+
         self.loading()
         self.m_treeCtrl7.DeleteChildren(self.root_node)
         # thread = threading.Thread(target=self.do_search)
         # thread.start()
-        self.thread_pool_executor.submit(self.do_search)
+        self.thread_pool_executor.submit(self.do_load)
 
-    def do_search(self):
+    def do_load(self):
         self.treeify_recursive("/", self.root_node, self.m_treeCtrl7)
         self.close_loading()
 
@@ -197,8 +228,6 @@ class MyFrame1(wx.Frame):
 
     def delete_node(self, item):
         self.loading()
-        # thread = threading.Thread(target=self.do_delete_node, args=[item])
-        # thread.start()
         self.thread_pool_executor.submit(self.do_delete_node, item)
 
     def do_delete_node(self, item):
@@ -210,7 +239,7 @@ class MyFrame1(wx.Frame):
         parent = self.m_treeCtrl7.GetItemParent(item)
         parent_id = parent.ID
         if parent_id is None:
-            self.search(None)
+            self.load(None)
         else:
             parent_path = self.get_current_path(parent)
             self.m_treeCtrl7.Collapse(parent)
@@ -276,8 +305,8 @@ class MyFrame1(wx.Frame):
 
         bSizer17 = wx.BoxSizer(wx.HORIZONTAL)
 
-        self.m_textCtrl8 = wx.TextCtrl(self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size(200, -1), 0)
-        bSizer17.Add(self.m_textCtrl8, 0, wx.ALIGN_CENTER_VERTICAL | wx.ALL, 5)
+        self.m_textCtrl8 = wx.TextCtrl(self.m_panel7, wx.ID_ANY, wx.EmptyString, wx.DefaultPosition, wx.Size(-1, -1), 0)
+        bSizer17.Add(self.m_textCtrl8, 1, wx.ALIGN_CENTER_VERTICAL | wx.ALL, 5)
 
         self.m_button3 = wx.Button(self.m_panel7, wx.ID_ANY, u"search", wx.DefaultPosition, wx.DefaultSize, 0)
         self.m_button3.Bind(wx.EVT_BUTTON, self.search)
@@ -292,9 +321,9 @@ class MyFrame1(wx.Frame):
         bSizer20 = self.bSizer20 = wx.BoxSizer(wx.VERTICAL)
 
         self.loading_animation = wx.adv.Animation()
-        self.loading_animation.LoadFile("loading.gif")
+        self.loading_animation.LoadFile(resource_path("loading.gif"))
         self.animation_ctrl = wx.adv.AnimationCtrl(self.m_panel8, wx.ID_ANY, anim=wx.adv.NullAnimation, size=(20, 20), pos=wx.DefaultPosition)
-        self.bSizer20.Add(self.animation_ctrl, 0, wx.ALL, 5)
+        self.bSizer20.Add(self.animation_ctrl, 0, wx.ALL | wx.ALIGN_CENTER_VERTICAL | wx.ALIGN_CENTER_HORIZONTAL, 5)
 
         self.m_treeCtrl7 = wx.TreeCtrl(self.m_panel8, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, style=wx.TR_DEFAULT_STYLE)
         bSizer20.Add(self.m_treeCtrl7, 1, wx.ALL | wx.EXPAND, 5)
@@ -389,7 +418,10 @@ class MyFrame1(wx.Frame):
         self.m_menubar1 = wx.MenuBar(0)
         self.connect_btn = wx.Menu()
         self.m_menubar1.Append(self.connect_btn, u"Connect")
+        self.refresh_btn = wx.Menu()
+        self.m_menubar1.Append(self.refresh_btn, u"Refresh")
         self.connect_btn.Bind(wx.EVT_MENU_OPEN, self.open_dialog)
+        self.refresh_btn.Bind(wx.EVT_MENU_OPEN, self.load)
 
         self.SetMenuBar(self.m_menubar1)
 

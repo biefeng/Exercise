@@ -10,7 +10,7 @@ parameters = {"orderId": "", "originalBillId": "", "orderPlatform": "", "dataSou
               "tradeDateEnd": "", "pageNo": 1, "pageSize": 50}
 
 flag = True
-with open("sale_detail_6_2.csv", 'w', encoding='utf-8', newline="\n") as csv_file:
+with open("sale_detail_7_21.csv", 'w', encoding='utf-8', newline="\n") as csv_file:
     response = requests.post(url=url, headers=headers, json=parameters)
     # print(response.content)
     detailList = response.json()['data']['list']
@@ -23,6 +23,7 @@ with open("sale_detail_6_2.csv", 'w', encoding='utf-8', newline="\n") as csv_fil
     fields.add("thirdPartChannelStr")
     fields.add("thirdPartChannel")
     fields.add("thirdPartPayChannel")
+    fields.add("bankCode")
     fields.add("orderTypeStr")
     fields.add("orderType")
     writer = csv.DictWriter(csv_file, fieldnames=list(fields), delimiter=r" ")
