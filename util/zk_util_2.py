@@ -21,7 +21,7 @@ for i in range(10):
 		j_ = i_ + str(j) + "/"
 		client.ensure_path(j_)
 
-		for k in range(100):
+		for k in range(30):
 			k_ = j_ + str(k) + "/"
 
 			client.ensure_path(k_)
@@ -44,6 +44,7 @@ for i in range(10):
 
 # client.delete("/base",recursive=True)
 print("finished")
+client.stop()
 client.close()
 
 print("closed")
