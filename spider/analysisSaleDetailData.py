@@ -11,8 +11,8 @@ from pandas.plotting import register_matplotlib_converters
 
 register_matplotlib_converters()
 
-df = pd.read_csv(r"sale_detail_7_21.csv", delimiter=r" ",
-                 usecols=lambda x: x in ['createDateStr', 'amount'])
+df = pd.read_csv(r"sale_detail_11_04.csv", delimiter=r" ",
+                 usecols=lambda x: x in ['createDateStr', 'amount', 'storeId'])
 df.amount = df["amount"].apply(pd.to_numeric, errors="coerce").fillna(0.0)
 df.createDateStr = pd.to_datetime(df.createDateStr, errors='coerce').dt.date
 
