@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 __author__ = '33504'
 
-from datetime import date, datetime
-
 import matplotlib.dates as dates
 import matplotlib.pyplot as plt
 import pandas as pd
-import numpy as np
+import json
 from pandas.plotting import register_matplotlib_converters
 
 register_matplotlib_converters()
@@ -32,8 +30,8 @@ for _store_name, _group in df.groupby("storeName"):
         print(name)
         if len(group.sum().values) == 2:
             data[name] = group.sum().values[0]
-            # print(group.sum().values[0])
     _data[_store_name] = data
+# print(json.dumps(_data))
 _stores = []
 _dates = None
 for _k, _v in _data.items():
@@ -47,35 +45,3 @@ plt.legend(_stores)
 ax = plt.gca()
 ax.xaxis.set_major_formatter(dates.DateFormatter("%m/%d"))
 plt.show()
-
-# plt.title("店铺台账")
-# plt.rcParams['font.sans-serif'] = ['SimHei']
-# plt.xlabel("日期")
-# plt.ylabel("金额")
-
-# plt.legend(['方案一', '方案二', '方案三', '方案四', '方案五'])
-# df.head()
-# data = {}
-# for name, group in df[df.createDateStr > date(2019, 6, 6)][df.createDateStr < date(2020, 6, 1)].groupby(
-#         'createDateStr'):
-#     print(name)
-#     if len(group.sum().values) == 1:
-#         data[name] = group.sum().values[0]
-#         print(group.sum().values[0])
-#
-# # d = dict({str(name): group.sum().values[0]})
-#
-# fig = plt.figure(figsize=(25, 10))
-# fig.set_tight_layout(True)
-#
-# plt.plot(list(data.keys()), list(data.values()))
-# ax = plt.gca()
-# ax.grid(axis='y', alpha=.9, color="gray", linestyle='-.')
-#
-# ax.xaxis.set_major_locator(dates.DayLocator(interval=10))
-# ax.xaxis.set_major_formatter(dates.DateFormatter("%m%d/"))
-# plt.show()
-# #
-# # fig = plt.figure()
-# # fig.add_subplot()
-# # fig.set_tight_layout(True)
